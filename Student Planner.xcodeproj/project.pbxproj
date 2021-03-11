@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A769BCC325F9C6D400EDD2D3 /* gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A769BCC225F9C6D400EDD2D3 /* gitignore */; };
 		A769BCCB25F9C74500EDD2D3 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769BCCA25F9C74500EDD2D3 /* Courses.swift */; };
+		A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */ = {isa = PBXBuildFile; fileRef = A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */; };
 		A7A44F7525ED70F400FB1989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F7425ED70F400FB1989 /* AppDelegate.swift */; };
 		A7A44F7725ED70F400FB1989 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */; };
 		A7A44F7925ED70F400FB1989 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F7825ED70F400FB1989 /* ViewController.swift */; };
@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A769BCC225F9C6D400EDD2D3 /* gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = gitignore; sourceTree = "<group>"; };
 		A769BCCA25F9C74500EDD2D3 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
+		A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = gitignoreFile; sourceTree = "<group>"; };
 		A7A44F7125ED70F400FB1989 /* Student Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A44F7425ED70F400FB1989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		A7A44F6825ED70F400FB1989 = {
 			isa = PBXGroup;
 			children = (
-				A769BCC225F9C6D400EDD2D3 /* gitignore */,
+				A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */,
 				A7A44F7325ED70F400FB1989 /* Student Planner */,
 				A7A44F8A25ED70F600FB1989 /* Student PlannerTests */,
 				A7A44F9525ED70F600FB1989 /* Student PlannerUITests */,
@@ -238,9 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7A44F8125ED70F500FB1989 /* LaunchScreen.storyboard in Resources */,
+				A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */,
 				A7A44F7E25ED70F500FB1989 /* Assets.xcassets in Resources */,
 				A7A44F7C25ED70F400FB1989 /* Main.storyboard in Resources */,
-				A769BCC325F9C6D400EDD2D3 /* gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
