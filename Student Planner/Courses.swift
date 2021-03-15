@@ -7,3 +7,36 @@ struct Courses {
     var courseProfessor: String // Paul Inventado
     var weightType: String // Weighted
 }
+
+struct Categories {
+    var category: String
+    var categWeight: Int?
+    var categPoints: Int?
+    
+}
+
+struct Assignment {
+    var assiName: String
+    var totalPoints: Int
+    var actualPoints: Int
+    var assiGrade: Int {
+        var grade = 0
+        grade = actualPoints/totalPoints
+        return grade
+    }
+    var assignDict: [String:Int]
+    
+    func add(){
+        assignDict[assiName] = [assiGrade]
+    }
+    
+}
+
+struct Grade {
+    var category: String
+    var weight: Int?
+    var totalPoints: Int?
+}
+
+
+
