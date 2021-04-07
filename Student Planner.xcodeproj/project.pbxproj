@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		7A2F137C25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
 		7A2F137D25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
 		7A2F137E25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
+
+		3748215D25FA888700F7D3EE /* ProfessorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748215C25FA888700F7D3EE /* ProfessorInfo.swift */; };
+
 		A769BCCB25F9C74500EDD2D3 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769BCCA25F9C74500EDD2D3 /* Courses.swift */; };
 		A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */ = {isa = PBXBuildFile; fileRef = A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */; };
+		A769BCDB25F9D63F00EDD2D3 /* CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */; };
 		A7A44F7525ED70F400FB1989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F7425ED70F400FB1989 /* AppDelegate.swift */; };
 		A7A44F7725ED70F400FB1989 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */; };
 		A7A44F7925ED70F400FB1989 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F7825ED70F400FB1989 /* ViewController.swift */; };
@@ -40,9 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+
 		7A2F137B25F9D88A00629063 /* Assignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignments.swift; sourceTree = "<group>"; };
+
+		3748215C25FA888700F7D3EE /* ProfessorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorInfo.swift; sourceTree = "<group>"; };
+
 		A769BCCA25F9C74500EDD2D3 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 		A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = gitignoreFile; sourceTree = "<group>"; };
+		A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTests.swift; sourceTree = "<group>"; };
 		A7A44F7125ED70F400FB1989 /* Student Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A44F7425ED70F400FB1989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +127,7 @@
 				A7A44F8225ED70F500FB1989 /* Info.plist */,
 				A769BCCA25F9C74500EDD2D3 /* Courses.swift */,
 				7A2F137B25F9D88A00629063 /* Assignments.swift */,
+				3748215C25FA888700F7D3EE /* ProfessorInfo.swift */,
 			);
 			path = "Student Planner";
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 			children = (
 				A7A44F8B25ED70F600FB1989 /* Student_PlannerTests.swift */,
 				A7A44F8D25ED70F600FB1989 /* Info.plist */,
+				A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */,
 			);
 			path = "Student PlannerTests";
 			sourceTree = "<group>";
@@ -274,7 +286,11 @@
 				A7A44F7925ED70F400FB1989 /* ViewController.swift in Sources */,
 				A7A44F7525ED70F400FB1989 /* AppDelegate.swift in Sources */,
 				A7A44F7725ED70F400FB1989 /* SceneDelegate.swift in Sources */,
+
 				7A2F137C25F9D88A00629063 /* Assignments.swift in Sources */,
+
+				3748215D25FA888700F7D3EE /* ProfessorInfo.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A2F137D25F9D88A00629063 /* Assignments.swift in Sources */,
+
+				A769BCDB25F9D63F00EDD2D3 /* CoursesTests.swift in Sources */,
+
 				A7A44F8C25ED70F600FB1989 /* Student_PlannerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
