@@ -19,6 +19,7 @@
 		A7A44F8125ED70F500FB1989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A44F7F25ED70F500FB1989 /* LaunchScreen.storyboard */; };
 		A7A44F8C25ED70F600FB1989 /* Student_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F8B25ED70F600FB1989 /* Student_PlannerTests.swift */; };
 		A7A44F9725ED70F600FB1989 /* Student_PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F9625ED70F600FB1989 /* Student_PlannerUITests.swift */; };
+		FE3A1D11261E9C4E00C0A6AC /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3A1D10261E9C4E00C0A6AC /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A7A44F9225ED70F600FB1989 /* Student PlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student PlannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A44F9625ED70F600FB1989 /* Student_PlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_PlannerUITests.swift; sourceTree = "<group>"; };
 		A7A44F9825ED70F600FB1989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3A1D10261E9C4E00C0A6AC /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				A7A44F7F25ED70F500FB1989 /* LaunchScreen.storyboard */,
 				A7A44F8225ED70F500FB1989 /* Info.plist */,
 				A769BCCA25F9C74500EDD2D3 /* Courses.swift */,
+				FE3A1D10261E9C4E00C0A6AC /* Calculator.swift */,
 				3748215C25FA888700F7D3EE /* ProfessorInfo.swift */,
 			);
 			path = "Student Planner";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A769BCCB25F9C74500EDD2D3 /* Courses.swift in Sources */,
+				FE3A1D11261E9C4E00C0A6AC /* Calculator.swift in Sources */,
 				A7A44F7925ED70F400FB1989 /* ViewController.swift in Sources */,
 				A7A44F7525ED70F400FB1989 /* AppDelegate.swift in Sources */,
 				A7A44F7725ED70F400FB1989 /* SceneDelegate.swift in Sources */,
