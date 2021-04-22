@@ -11,7 +11,9 @@ enum AssignmentType{
 class Assignments {
     var assignment: [String: String]?
     var totalAssignments: Int?
-    init?(assignment: [String: String]!, totalAssignments: Int!) {
+    var printOut: String
+    init?() {
+        printOut = ""
         if assignment == nil, totalAssignments == nil {
             return nil
         }
@@ -21,8 +23,9 @@ class Assignments {
         }
     }
 
-    func add(_ name: String, due: String) {
+    func add(_ name: String, due: Date) {
         totalAssignments = totalAssignments! + 1
+        printOut = "Your total Assignments to do are: $\(totalAssignments)"
     }
 
     func completedAssignment() {
