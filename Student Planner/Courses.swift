@@ -22,20 +22,20 @@ struct Courses {
 }
 
 /*
-let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-let archiveURL = documentsDirectory.appendingPathComponent("courses_array").appendingPathExtension("plist")
+ let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+ let archiveURL = documentsDirectory.appendingPathComponent("courses_array").appendingPathExtension("plist")
 
-func encodeCourseArray() {
-    let propertyListEncoder = PropertyListEncoder()
-    let encodedCourses = try? propertyListEncoder.encode(semesterCourses)
-    try? encodedCourses?.write(to: archiveURL, options: .noFileProtection)
-}
+ func encodeCourseArray() {
+     let propertyListEncoder = PropertyListEncoder()
+     let encodedCourses = try? propertyListEncoder.encode(semesterCourses)
+     try? encodedCourses?.write(to: archiveURL, options: .noFileProtection)
+ }
 
-func decodeCourseData() {
-    let propertyListDecoder = PropertyListDecoder()
-    if let retrievedCoursesData = try? Data(contentsOf: archiveURL),
-        let decodedCourses = try? propertyListDecoder.decode(Array<Courses>.self, from: retrievedCoursesData) {
-        print(decodedCourses)
-    }
-}
-*/
+ func decodeCourseData() {
+     let propertyListDecoder = PropertyListDecoder()
+     if let retrievedCoursesData = try? Data(contentsOf: archiveURL),
+         let decodedCourses = try? propertyListDecoder.decode(Array<Courses>.self, from: retrievedCoursesData) {
+         print(decodedCourses)
+     }
+ }
+ */

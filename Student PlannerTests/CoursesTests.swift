@@ -38,7 +38,7 @@ class StudentPlannerTests: XCTestCase {
     func testInitializer() {
         let myCourse = Courses(name: "Biology 101", semester: "Spring 2019", weightType: "Weighted")
         XCTAssertEqual(myCourse.name, "Biology 101")
-        XCTAssertEqual(myCourse.semester, "Spring 2019")
+        XCTAssertEqual(myCourse.semester, "Spring 2019s")
         XCTAssertEqual(myCourse.weightType, "Weighted")
         XCTAssertEqual(myCourse.semesterCourses.count, 0)
     }
