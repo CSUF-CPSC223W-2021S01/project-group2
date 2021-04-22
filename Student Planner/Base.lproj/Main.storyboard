@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="YxT-hg-mXx"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Classes" id="DYY-VJ-BvR"/>
+                    <tabBarItem key="tabBarItem" title="Classes" image="books.vertical" catalog="system" selectedImage="books.vertical.fill" id="DYY-VJ-BvR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gh2-Tu-ipj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,6 +198,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="books.vertical" catalog="system" width="128" height="103"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
