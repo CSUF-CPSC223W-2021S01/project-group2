@@ -1,24 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8IT-IR-Hk9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Classes-->
+        <scene sceneID="bD3-PT-1wW">
+            <objects>
+                <viewController id="aNd-Hs-dAM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GNo-Hm-8KA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YxT-hg-mXx"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Classes" id="DYY-VJ-BvR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gh2-Tu-ipj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1590" y="352"/>
+        </scene>
+        <!--Home -->
+        <scene sceneID="fy4-1h-rUp">
+            <objects>
+                <viewController id="SFs-bB-qHU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WfB-Fv-SCK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OH1-MF-QE9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="shx-vV-WuN"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home " id="EeL-tF-vPM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2I7-GO-thj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2343" y="352"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wcf-pA-o2G">
+            <objects>
+                <tabBarController id="8IT-IR-Hk9" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AK4-hK-ubM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SFs-bB-qHU" kind="relationship" relationship="viewControllers" id="YZt-NJ-Pov"/>
+                        <segue destination="aNd-Hs-dAM" kind="relationship" relationship="viewControllers" id="NAe-H3-SRV"/>
+                        <segue destination="abC-9i-Gqg" kind="relationship" relationship="viewControllers" id="F1l-qZ-2XB"/>
+                        <segue destination="XFh-E9-FOW" kind="relationship" relationship="viewControllers" id="NFZ-EQ-5U6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmB-wt-sxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1691" y="-374"/>
+        </scene>
+        <!--Add Assignments-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Add Assignments" customClass="HomePage" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5WE-5t-piv">
+                                <rect key="frame" x="77" y="301" width="260" height="240"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O2e-AK-BGq">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="240"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Assignment Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ctI-tj-gG8">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Your Due Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CL-Kk-ZkK">
+                                                <rect key="frame" x="0.0" y="30.5" width="260" height="15.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JBx-1O-RcX">
+                                                <rect key="frame" x="0.0" y="51" width="260" height="161.5"/>
+                                            </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKO-2q-fQh">
+                                                <rect key="frame" x="0.0" y="217.5" width="260" height="17.5"/>
+                                                <state key="normal" title="Add Assignment"/>
+                                                <connections>
+                                                    <action selector="addAssignment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x0D-g6-nf3"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZXw-99-NBE">
+                                                <rect key="frame" x="0.0" y="240" width="260" height="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="0T3-q6-PtQ"/>
+                                    <constraint firstAttribute="width" constant="260" id="O1Z-G6-TD5"/>
+                                </constraints>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yG7-j6-zDo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Back to Assignments" id="iUP-jM-94X"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bnO-83-Fu0">
+                                <rect key="frame" x="109" y="549" width="197" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="5WE-5t-piv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I8D-r2-o63"/>
+                            <constraint firstItem="5WE-5t-piv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ppz-4i-FPY"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Assignments" id="zjG-IV-8ke"/>
+                    <navigationItem key="navigationItem" title="Title" id="GJ1-QD-4SA"/>
+                    <connections>
+                        <outlet property="AssignmentName" destination="ctI-tj-gG8" id="aMb-V1-yKA"/>
+                        <outlet property="DueDate" destination="JBx-1O-RcX" id="HHP-j8-bWe"/>
+                        <outlet property="assignCount" destination="bnO-83-Fu0" id="Ab1-dm-ZB4"/>
+                        <outlet property="d" destination="ctI-tj-gG8" id="Q7W-jX-7bY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-772.46376811594212" y="1083.4821428571429"/>
+        </scene>
+        <!--Assignments-->
+        <scene sceneID="MGF-gh-U5i">
+            <objects>
+                <viewController id="XFh-E9-FOW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OcR-0x-aX5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry0-iT-b36">
+                                <rect key="frame" x="147" y="741" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Assignments"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="38E-k4-lnq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sPe-sf-edg"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Assignments" id="sxk-BM-uJS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJ8-7B-01h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-772" y="362"/>
+        </scene>
+        <!--Grades-->
+        <scene sceneID="I4s-Dh-noy">
+            <objects>
+                <viewController id="abC-9i-Gqg" customClass="Assignments" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ez7-Eq-WAt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="dAh-15-KeX">
+                                <rect key="frame" x="-57" y="55" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <viewLayoutGuide key="safeArea" id="dLy-DF-6Gy"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="34m-7V-rnv"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Grades" id="kIt-gx-Uzg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzB-LQ-Pfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="352"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
