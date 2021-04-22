@@ -1,39 +1,41 @@
 import Foundation
 
 struct Courses {
-    var name: String? // Computer Science 223W
-    var semesterName: String? // Spring 2021
+    var name: String // Computer Science 223W
+    var semester: String // Spring 2021
+    var weightType: String // Weighted
     var days: String? // Tuesday & Thursday
     var times: String? // 9:00 pm - 10:50 pm
     var courseProfessor: String? // Paul Inventado
-    var weightType: String? // Weighted
+    var semesterCourses = [Courses]()
 
-    init?(name: String?, semesterName: String?, days: String?, times: String?, courseProfessor: String?, weightType: String?) {
-        // if the course name, semester name, or weight type are not given, then return nil
-        if name == nil || semesterName == nil || weightType == nil {
-            return nil
+    mutating func addCourse(newCourse: Courses) -> Bool {
+        // if the given Courses instance has a matching name and semester in the array return false, otherwise add the newCourse and return true
+        for course in semesterCourses {
+            if course.name == newCourse.name, course.semester == newCourse.semester {
+                return false
+            }
         }
-        self.name = name
-        self.semesterName = semesterName
-        self.days = days
-        self.times = times
-        self.courseProfessor = courseProfessor
-        self.weightType = weightType
+        semesterCourses.append(newCourse)
+        return true
     }
 }
 
-// arrays of Courses instances
-var courseArray: [Courses] = []
-// dictionary with key: semesterName & value: courseArray
-var semesterCourses = [String: [Courses]]()
+/*
+let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+let archiveURL = documentsDirectory.appendingPathComponent("courses_array").appendingPathExtension("plist")
 
-// function to add a new course to a semester or create a new semester
-func addCourse(semesterName: String, course: [Courses]) {
-    // if the semester given already exists then append a new Courses instance to courseArray and assign it to its key (semesterName); otherwise create a new key
-    if semesterCourses[semesterName] != nil {
-        courseArray.append(contentsOf: course)
-        semesterCourses[semesterName] = courseArray
-    } else {
-        semesterCourses[semesterName] = course
+func encodeCourseArray() {
+    let propertyListEncoder = PropertyListEncoder()
+    let encodedCourses = try? propertyListEncoder.encode(semesterCourses)
+    try? encodedCourses?.write(to: archiveURL, options: .noFileProtection)
+}
+
+func decodeCourseData() {
+    let propertyListDecoder = PropertyListDecoder()
+    if let retrievedCoursesData = try? Data(contentsOf: archiveURL),
+        let decodedCourses = try? propertyListDecoder.decode(Array<Courses>.self, from: retrievedCoursesData) {
+        print(decodedCourses)
     }
 }
+*/

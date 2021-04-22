@@ -20,18 +20,30 @@ class StudentPlannerTests: XCTestCase {
      
      init?(name: String?, semesterName: String?, days: String?, times: String?, courseProfessor: String?, weightType: String?) 
     */
-    func testNoName() throws {
-        let content = Courses(name: nil, semesterName: "Spring 2021", days: "Tuesday & Thursday", times: "9:00 am - 10:50 am", courseProfessor: "Paul Inventado", weightType: "Weighted")
-        XCTAssertNil(content)
+    func testNoDays() throws {
+        let content = Courses(name: "Computer Science 223W", semester: "Spring 2021", weightType: "Weighted", days: nil, times: "9:00 am - 10:50 am", courseProfessor: "Paul Inventado")
+        XCTAssertNotNil(content)
     }
     
-    func testNoSemesterName() throws {
-        let content = Courses(name: "CPSC 223W", semesterName: nil, days: "Tuesday & Thursday", times: "9:00 am - 10:50 am", courseProfessor: "Paul Inventado", weightType: "Weighted")
-        XCTAssertNil(content)
+    func testNoTimes() throws {
+        let content = Courses(name: "Art 123", semester: "Fall 2020", weightType: "Grade by Points", days: "Monday & Wednesday", times: nil, courseProfessor: "Bob Ross")
+        XCTAssertNotNil(content)
     }
     
-    func testNoWeightType() throws {
-        let content = Courses(name: "CPSC 223W", semesterName: "Spring 2021", days: "Tuesday & Thursday", times: "9:00 am - 10:50 am", courseProfessor: "Paul Inventado", weightType: nil)
-        XCTAssertNil(content)
+    func testNoCourseProfessor() throws {
+        let content = Courses(name: "Math 456", semester: "Spring 2021", weightType: "Weighted", days: "Saturday", times: "9:00 - 11:45 am", courseProfessor: nil)
+        XCTAssertNotNil(content)
+    }
+    
+    func testInitializer() {
+        let myCourse = Courses(name: "Biology 101", semester: "Spring 2019", weightType: "Weighted")
+        XCTAssertEqual(myCourse.name, "Biology 101")
+        XCTAssertEqual(myCourse.semester, "Spring 2019")
+        XCTAssertEqual(myCourse.weightType, "Weighted")
+        XCTAssertEqual(myCourse.semesterCourses.count, 0)
+    }
+    
+    func addCourse1() {
+        
     }
 }
