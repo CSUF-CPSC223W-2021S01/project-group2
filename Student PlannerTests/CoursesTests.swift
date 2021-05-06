@@ -21,17 +21,17 @@ class StudentPlannerTests: XCTestCase {
      init?(name: String?, semesterName: String?, days: String?, times: String?, courseProfessor: String?, weightType: String?) 
     */
     func testNoDays() throws {
-        let content = Courses(name: "Computer Science 223W", semester: "Spring 2021", weightType: "Weighted", days: nil, times: "9:00 am - 10:50 am", courseProfessor: "Paul Inventado")
+        let content = Courses(name: "Computer Science 223W", semester: "Spring 2021", courseProfessor: "Paul Inventado", weightType: "Weighted", days: nil, times: "9:00 am - 10:50 am")
         XCTAssertNotNil(content)
     }
     
     func testNoTimes() throws {
-        let content = Courses(name: "Art 123", semester: "Fall 2020", weightType: "Points", days: "Monday & Wednesday", times: nil, courseProfessor: "Bob Ross")
+        let content = Courses(name: "Art 123", semester: "Fall 2020", courseProfessor: "Bob Ross", weightType: "Points", days: "Monday & Wednesday", times: nil)
         XCTAssertNotNil(content)
     }
     
     func testNoCourseProfessor() throws {
-        let content = Courses(name: "Math 456", semester: "Spring 2021", weightType: "Weighted", days: "Saturday", times: "9:00 - 11:45 am", courseProfessor: nil)
+        let content = Courses(name: "Math 456", semester: "Spring 2021", courseProfessor: nil, weightType: "Weighted", days: "Saturday", times: "9:00 - 11:45 am")
         XCTAssertNotNil(content)
     }
     
