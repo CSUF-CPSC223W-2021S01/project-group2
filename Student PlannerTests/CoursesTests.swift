@@ -26,7 +26,7 @@ class StudentPlannerTests: XCTestCase {
     }
     
     func testNoTimes() throws {
-        let content = Courses(name: "Art 123", semester: "Fall 2020", weightType: "Grade by Points", days: "Monday & Wednesday", times: nil, courseProfessor: "Bob Ross")
+        let content = Courses(name: "Art 123", semester: "Fall 2020", weightType: "Points", days: "Monday & Wednesday", times: nil, courseProfessor: "Bob Ross")
         XCTAssertNotNil(content)
     }
     
@@ -35,12 +35,13 @@ class StudentPlannerTests: XCTestCase {
         XCTAssertNotNil(content)
     }
     
-    func testInitializer() {
-        let myCourse = Courses(name: "Biology 101", semester: "Spring 2019", weightType: "Weighted")
-        XCTAssertEqual(myCourse.name, "Biology 101")
-        XCTAssertEqual(myCourse.semester, "Spring 2019")
-        XCTAssertEqual(myCourse.weightType, "Weighted")
+    func testCoursesInitializer() {
+        let myCourse = Courses()
         XCTAssertEqual(myCourse.semesterCourses.count, 0)
+    }
+    
+    func testHistoryDefaultInit() {
+        _ = History()
     }
     
     func addCourse1() {
