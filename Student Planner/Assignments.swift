@@ -14,16 +14,16 @@ class Assignments {
     var printOut: String
     init?() {
         printOut = ""
-        if assignment == nil, totalAssignments == nil {
-            return nil
-        }
-        else {
+        //if assignment == nil, //totalAssignments == nil {
+            //return nil
+        //}
+        //else {
             self.assignment = ""
             self.totalAssignments = 0
-        }
+        //}
     }
 
-    func add(_ name: String, due: Date) {
+    func add(_ name: String, due: String) {
         totalAssignments = totalAssignments! + 1
         printOut = "Your total Assignments to do are: $\(totalAssignments)"
     }

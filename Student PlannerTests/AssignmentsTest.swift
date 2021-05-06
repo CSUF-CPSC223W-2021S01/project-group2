@@ -29,21 +29,20 @@ class AssignmentsTest: XCTestCase {
         }
     }
     func testDefaultInitilizer(){
-        let myAssignment: Assignments = Assignments()
-        XCTAssertEqual(myAssignment.assignment,"")
+        let assignments = Assignments()
+        XCTAssertEqual(assignments?.assignment,"")
     }
     func testDefaultInitilizertotalAssigments(){
-        let myAssignment: Assignments = Assignments()
-        XCTAssertEqual(myAssignment.totalAssignments,0)
+        let assignments = Assignments()
+        XCTAssertEqual(assignments?.totalAssignments,0)
     }
     func testDefaultInitilizerPrintOut(){
-        let myAssignment: Assignments = Assignments()
-        XCTAssertEqual(myAssignment.printOut,"")
+        let assignments = Assignments()
+        XCTAssertEqual(assignments?.printOut,"")
     }
     func addAssignment() {
-            var assignments = Assignments()
-            let result = assignments.add("Test 1", Date)
-            XCTAssertTrue(result)
-        XCTAssertEqual(result.totalAssignments, 1)
-        }
+        let assignments = Assignments()
+        let result = assignments?.add("Test 1", due: "06102021" )
+        XCTAssertEqual(assignments?.totalAssignments, 1)
+    }
 }

@@ -81,21 +81,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="240"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Assignment Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ctI-tj-gG8">
-                                                <rect key="frame" x="0.0" y="0.0" width="260" height="25.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="72"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Your Due Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CL-Kk-ZkK">
-                                                <rect key="frame" x="0.0" y="30.5" width="260" height="15.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JBx-1O-RcX">
-                                                <rect key="frame" x="0.0" y="51" width="260" height="161.5"/>
-                                            </datePicker>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Due Date as DDMMYY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIy-dE-wNT">
+                                                <rect key="frame" x="0.0" y="77" width="260" height="72.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKO-2q-fQh">
-                                                <rect key="frame" x="0.0" y="217.5" width="260" height="17.5"/>
+                                                <rect key="frame" x="0.0" y="154.5" width="260" height="80.5"/>
                                                 <state key="normal" title="Add Assignment"/>
                                                 <connections>
                                                     <action selector="addAssignment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x0D-g6-nf3"/>
@@ -137,7 +133,7 @@
                     <navigationItem key="navigationItem" title="Title" id="GJ1-QD-4SA"/>
                     <connections>
                         <outlet property="AssignmentName" destination="ctI-tj-gG8" id="aMb-V1-yKA"/>
-                        <outlet property="DueDate" destination="JBx-1O-RcX" id="HHP-j8-bWe"/>
+                        <outlet property="DueDate" destination="WIy-dE-wNT" id="8Sq-wK-mWr"/>
                         <outlet property="assignCount" destination="bnO-83-Fu0" id="Ab1-dm-ZB4"/>
                         <outlet property="d" destination="ctI-tj-gG8" id="Q7W-jX-7bY"/>
                     </connections>
