@@ -9,7 +9,7 @@ enum AssignmentType{
     case project 
 }
 class Assignments {
-    var assignment: [String: String]?
+    var assignment: String?
     var totalAssignments: Int?
     var printOut: String
     init?() {
@@ -18,7 +18,7 @@ class Assignments {
             return nil
         }
         else {
-            self.assignment = [:]
+            self.assignment = ""
             self.totalAssignments = 0
         }
     }
