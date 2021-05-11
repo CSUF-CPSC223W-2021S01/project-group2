@@ -77,7 +77,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="returnPressed:" destination="JBq-rP-cgh" eventType="primaryActionTriggered" id="pS6-98-evC"/>
                                                         <action selector="textEditingChanged:" destination="JBq-rP-cgh" eventType="editingChanged" id="KMO-39-J0M"/>
                                                     </connections>
                                                 </textField>
@@ -105,7 +104,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="returnPressed:" destination="JBq-rP-cgh" eventType="editingDidEnd" id="m3g-DB-G6o"/>
                                                         <action selector="textEditingChanged:" destination="JBq-rP-cgh" eventType="editingDidEnd" id="mmi-j6-143"/>
                                                     </connections>
                                                 </textField>
@@ -133,7 +131,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="returnPressed:" destination="JBq-rP-cgh" eventType="editingDidEnd" id="bTF-HA-OPS"/>
                                                         <action selector="textEditingChanged:" destination="JBq-rP-cgh" eventType="editingDidEnd" id="mJD-Qf-LP4"/>
                                                     </connections>
                                                 </textField>
@@ -161,7 +158,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="returnPressed:" destination="JBq-rP-cgh" eventType="editingDidEnd" id="Rm1-dL-AgZ"/>
                                                         <action selector="textEditingChanged:" destination="JBq-rP-cgh" eventType="editingDidEnd" id="QYF-8E-Cwn"/>
                                                     </connections>
                                                 </textField>
@@ -180,7 +176,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="M Tu W Th F Sa Su" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUL-dh-oFs">
+                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mon Tues Wed Thurs Fri Sat Sun" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUL-dh-oFs">
                                                     <rect key="frame" x="20" y="4" width="374" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="BIZ-my-tGm"/>
@@ -188,9 +184,6 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <action selector="returnPressed:" destination="JBq-rP-cgh" eventType="editingDidEnd" id="q81-z6-LO6"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -207,7 +200,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="9:00 - 10:50 am" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLA-ya-c83">
+                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="9:00 am - 10:50 am" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLA-ya-c83">
                                                     <rect key="frame" x="20" y="4" width="374" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="374" id="7cV-OT-RuV"/>
@@ -215,9 +208,6 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <action selector="returnPressed:" destination="JBq-rP-cgh" eventType="editingDidEnd" id="26Q-z5-Tbf"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -363,22 +353,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoursesCellIdentifier" textLabel="DYA-yE-npf" detailTextLabel="gel-rK-nnE" style="IBUITableViewCellStyleSubtitle" id="rdr-1m-5Sd">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoursesCellIdentifier" textLabel="DYA-yE-npf" detailTextLabel="gel-rK-nnE" rowHeight="74" style="IBUITableViewCellStyleSubtitle" id="rdr-1m-5Sd">
+                                <rect key="frame" x="0.0" y="28" width="414" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rdr-1m-5Sd" id="Bzw-eh-SrH">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DYA-yE-npf">
-                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                            <rect key="frame" x="20" y="17" width="33" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gel-rK-nnE">
-                                            <rect key="frame" x="20" y="31.5" width="33" height="14.5"/>
+                                            <rect key="frame" x="20" y="40.5" width="33" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>

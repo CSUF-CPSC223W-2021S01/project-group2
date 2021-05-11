@@ -1,6 +1,7 @@
 import UIKit
 
 class CourseDetailTableViewController: UITableViewController {
+    // outlets for the text fields
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var semesterTextField: UITextField!
     @IBOutlet var professorTextField: UITextField!
@@ -8,6 +9,7 @@ class CourseDetailTableViewController: UITableViewController {
     @IBOutlet var daysTextField: UITextField!
     @IBOutlet var timesTextField: UITextField!
     
+    // outlet for the save button
     @IBOutlet var saveButton: UIBarButtonItem!
     
     var course: Courses?
@@ -25,41 +27,40 @@ class CourseDetailTableViewController: UITableViewController {
             timesTextField.text = course.times
         }
         
+        // disable save button when first creating a new course
         updateSaveButtonState()
     }
     
+    // function disables the save button if the text fields for the course name, semester, professor, or weight type are empty
     func updateSaveButtonState() {
         let nameText = nameTextField.text ?? ""
-        let semesterText = nameTextField.text ?? ""
-        let professorText = nameTextField.text ?? ""
-        let weightText = nameTextField.text ?? ""
-        if nameText.isEmpty || semesterText.isEmpty || professorText.isEmpty || weightText.isEmpty {
-            saveButton.isEnabled = false
-        }
-        else {
-            saveButton.isEnabled = true
-        }
+        saveButton.isEnabled = !nameText.isEmpty
+        
+        let semesterText = semesterTextField.text ?? ""
+        saveButton.isEnabled = !semesterText.isEmpty
+        
+        let professorText = professorTextField.text ?? ""
+        saveButton.isEnabled = !professorText.isEmpty
+        
+        let weightText = weightTextField.text ?? ""
+        saveButton.isEnabled = !weightText.isEmpty
     }
+
+    // action that calls updateSaveButtonState() whenever the text fields for the course name, semester, professor, or weight are edited
     @IBAction func textEditingChanged(_ sender: UITextField) {
         updateSaveButtonState()
     }
     
-    @IBAction func returnPressed(_ sender: UITextField) {
-        nameTextField.resignFirstResponder()
-        semesterTextField.resignFirstResponder()
-        professorTextField.resignFirstResponder()
-        weightTextField.resignFirstResponder()
-        daysTextField.resignFirstResponder()
-        timesTextField.resignFirstResponder()
-    }
-    
+    // function passes the new Courses() object information to CoursesTableViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
+        // checks whether the "Cancel" or "Save" button has been pressed and returns if "Cancel" was pressed
         guard segue.identifier == "saveUnwind" else {
             return
         }
         
+        // read the values from the text fields into constants and pass them into the Courses() initializer
         let courseName = nameTextField.text!
         let courseSemester = semesterTextField.text!
         let courseProfessor = professorTextField.text!
@@ -67,9 +68,7 @@ class CourseDetailTableViewController: UITableViewController {
         let courseDays = daysTextField.text!
         let courseTimes = timesTextField.text!
         
+        // sets the property to its corresponding value
         course = Courses(name: courseName, semester: courseSemester, professor: courseProfessor, weightType: courseWeight, days: courseDays, times: courseTimes)
     }
-    
-    
 }
-
