@@ -80,6 +80,7 @@ class CoursesTableViewController: UITableViewController {
         }
     }
     
+    // function allows the user to rearrange the table view cells
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         let movedObject = courses[sourceIndexPath.row]
         courses.remove(at: sourceIndexPath.row)
