@@ -1,67 +1,27 @@
 import Foundation
 
-struct Courses: Codable, Equatable {
+struct Courses: Codable {
     var name: String = "" // Computer Science 223W
     var semester: String = "" // Spring 2021
-    var courseProfessor: String? // Paul Inventado
+    var professor: String = "" // Paul Inventado
     var weightType: String = "" // Weighted
     var days: String? // Tuesday & Thursday
     var times: String? // 9:00 pm - 10:50 pm
-    var semesterCourses = [Courses]()
-    // protocol to check if two Courses objects are equal
-    static func == (lhs: Courses, rhs: Courses) -> Bool {
-        return lhs.name == rhs.name && lhs.semester == rhs.semester && lhs.courseProfessor == rhs.courseProfessor && lhs.weightType == rhs.weightType && lhs.days == rhs.days && lhs.times == rhs.times
-    }
-
-    mutating func addCourse(newCourse: Courses) -> Bool {
-        // if the given Courses object newCourse and a Courses object in the array match return false, otherwise append newCourse to the array and return true
-        for course in semesterCourses {
-            if course == newCourse {
-                return false
-            }
+    
+    static let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let archiveURL = documentsDirectory.appendingPathComponent("Courses").appendingPathExtension("plist")
+    
+    static func decodeCourses() -> [Courses]? {
+        guard let codedCourses = try? Data(contentsOf: archiveURL) else {
+            return nil
         }
-        semesterCourses.append(newCourse)
-        return true
-    }
-
-    mutating func removeCourse(courseToBeRemoved: Courses) -> Bool {
-        // if the given Courses object newCourse and a Courses object in the array match remove it from the array and return true, otherwise return false
-        var arrayIndex = 0
-        for course in semesterCourses {
-            if course == courseToBeRemoved {
-                semesterCourses.remove(at: arrayIndex)
-                return true
-            }
-            arrayIndex += 1
-        }
-        return false
-    }
-}
-
-struct History {
-    var history: Courses
-
-    init() {
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let archiveURL = documentsDirectory.appendingPathComponent("Courses").appendingPathExtension("plist")
-
         let propertyListDecoder = PropertyListDecoder()
-        if let retrievedCoursesData = try? Data(contentsOf: archiveURL),
-           let decodedCourses = try? propertyListDecoder.decode(Courses.self, from: retrievedCoursesData)
-        {
-            history = decodedCourses
-        }
-        else {
-            history = Courses()
-        }
+        return try? propertyListDecoder.decode(Array<Courses>.self, from: codedCourses)
     }
-
-    func save() {
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let archiveURL = documentsDirectory.appendingPathComponent("Courses").appendingPathExtension("plist")
-
+    
+    static func saveCourses(_ courses: [Courses]) {
         let propertyListEncoder = PropertyListEncoder()
-        let encodedCourses = try? propertyListEncoder.encode(history)
+        let encodedCourses = try? propertyListEncoder.encode(courses)
         try? encodedCourses?.write(to: archiveURL, options: .noFileProtection)
     }
 }
