@@ -9,21 +9,21 @@ enum AssignmentType{
     case project 
 }
 class Assignments {
-    var assignment: [String: String]?
+    var assignment: String?
     var totalAssignments: Int?
     var printOut: String
     init?() {
         printOut = ""
-        if assignment == nil, totalAssignments == nil {
-            return nil
-        }
-        else {
-            self.assignment = [:]
+        //if assignment == nil, //totalAssignments == nil {
+            //return nil
+        //}
+        //else {
+            self.assignment = ""
             self.totalAssignments = 0
-        }
+        //}
     }
 
-    func add(_ name: String, due: Date) {
+    func add(_ name: String, due: String) {
         totalAssignments = totalAssignments! + 1
         printOut = "Your total Assignments to do are: $\(totalAssignments)"
     }
