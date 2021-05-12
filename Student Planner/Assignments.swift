@@ -23,9 +23,11 @@ class Assignments {
     func add(name: String, due: String) {
         totalAssignments = totalAssignments + 1
         printCount = "Your total Assignments to do are: \(totalAssignments)"
-        assignment[name] = printArray
-        //printArray = "\(Array(assignment.keys)[0]): \(Array(assignment.values)[0])"
-        printArray = "\(name) due on \(due)"
+        assignment[name] = due
+        printArray = "\(assignment.forEach { print("\($0) is due on \($1)") })"
+        //printArray = "\(assignment as AnyObject)"
+        //assignment.forEach { print("\($0): \($1)") }
+
     }
 
     func completedAssignment() {

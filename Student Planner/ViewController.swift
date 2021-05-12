@@ -13,22 +13,23 @@ class ViewController: UIViewController {
     @IBOutlet var assignName: UITextField!
     @IBOutlet var DueDate: UITextField!
     @IBOutlet var count: UITextField!
-    @IBOutlet var list: UITextField!
+    @IBOutlet var list: UITextView!
     var assign = Assignments()
     // End Assigment Section ----------------
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func addAssignment(_ sender: Any) {
+
+    @IBAction func addAssignment(_ sender: UIButton) {
     let assignmentName = String(assignName.text!)
-        let dueDate = String(DueDate.text!)
-        assign?.add(name: assignmentName, due: dueDate)
-        DueDate?.text = ""
-        assignName?.text = ""
-        print(assign!.printCount)
-        count.text = assign?.printCount
-        list.text = assign?.printArray
+    let dueDate = String(DueDate.text!)
+    assign?.add(name: assignmentName, due: dueDate)
+    DueDate?.text = ""
+    assignName?.text = ""
+    print(assign!.printCount)
+    count.text = assign?.printCount
+    list.text = assign?.printArray
     
     }
     // End Assigment Section ----------------
