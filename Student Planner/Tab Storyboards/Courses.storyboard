@@ -304,11 +304,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vwq-Tf-ODl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1578" y="368"/>
+            <point key="canvasLocation" x="-1578" y="348"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="W0X-Ol-0Ij"/>
+        <segue reference="zGm-iP-v4z"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="books.vertical" catalog="system" width="128" height="103"/>
