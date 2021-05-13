@@ -9,7 +9,7 @@ import UIKit
 class ViewController: UIViewController {
 
      // Assignment Section----------------
-    @IBOutlet var DueDate: UITextField!
+    @IBOutlet var DueDate: UIDatePicker!
     @IBOutlet var AssignmentName: UITextField!
     @IBOutlet var assignCount: UITextField!
     var assign = Assignments()
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     // Assignment Section----------------
     @IBAction func addAssignment(_ sender: Any) {
         let assignmentName = String(AssignmentName.text!)
-        assign?.add(assignmentName, due: DueDate.text!)
+        assign?.add(assignmentName, due: DueDate.date)
         
         print(assign!.printOut)
         assignCount.text = assign?.printOut
