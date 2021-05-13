@@ -11,7 +11,7 @@ import UIKit
 class ProfessorListTableViewController: UITableViewController {
     var prof: [Professor] = ProfessorList().list
     
-    @IBOutlet var ProfessorItem: UITableView! 
+    @IBOutlet var ProfessorItem: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
