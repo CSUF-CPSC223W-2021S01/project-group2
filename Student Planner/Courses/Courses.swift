@@ -6,12 +6,12 @@ struct Courses: Codable, Equatable {
     var professor: String = "" // Paul Inventado
     var weightType: String = "" // Weighted
     var days: String? // Tues & Thurs
-    var times: String? // 9:00 - 10:50 am
+    var times: String? // 9:00 am - 10:50 am
 
     static func == (lhs: Courses, rhs: Courses) -> Bool {
         return lhs.name == rhs.name && lhs.semester == rhs.semester && lhs.professor == rhs.professor && lhs.weightType == rhs.weightType && lhs.days == rhs.days && lhs.times == rhs.times
     }
-
+    
     // represents a file URL in the user's document directory
     static let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     static let archiveURL = documentsDirectory.appendingPathComponent("Courses").appendingPathExtension("plist")
