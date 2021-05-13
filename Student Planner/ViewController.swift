@@ -8,8 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-     // Assignment Section----------------
+    // Assignment Section----------------
+    // By Wesley Chou
     @IBOutlet var assignName: UITextField!
     @IBOutlet var DueDate: UITextField!
     @IBOutlet var count: UITextField!
@@ -21,17 +21,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // Assignment Section --------
     @IBAction func addAssignment(_ sender: UIButton) {
-    let assignmentName = String(assignName.text!)
-    let dueDate = String(DueDate.text!)
-    assign?.add(name: assignmentName, due: dueDate)
-    DueDate?.text = ""
-    assignName?.text = ""
-    print(assign!.printCount)
-    count.text = assign?.printCount
-    list.text = assign?.printArray
-    
+        let assignmentName = String(assignName.text!)
+        let dueDate = String(DueDate.text!)
+        assign?.add(name: assignmentName, due: dueDate)
+        DueDate?.text = ""
+        assignName?.text = ""
+        print(assign!.printCount)
+        count.text = assign?.printCount
+        list.text = assign?.printDictionary
     }
+
     // End Assigment Section ----------------
 }
-
