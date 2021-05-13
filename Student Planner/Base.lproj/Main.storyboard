@@ -3,8 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,6 +36,16 @@
             </objects>
             <point key="canvasLocation" x="-1543" y="96"/>
         </scene>
+        <!--ProfessorListVC-->
+        <scene sceneID="DGb-Qz-fsq">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ProfessorListVC" storyboardName="ProfessorsList" referencedIdentifier="ProfessorListVC" id="AMI-zW-3Qb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sH8-S9-OpL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQu-nT-jdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-729" y="96"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wcf-pA-o2G">
             <objects>
@@ -51,29 +59,13 @@
                         <segue destination="C8u-gF-DGe" kind="relationship" relationship="viewControllers" id="RUt-MM-ioc"/>
                         <segue destination="q5v-I1-EtI" kind="relationship" relationship="viewControllers" id="Zw3-4S-bT3"/>
                         <segue destination="F1e-4Q-AeC" kind="relationship" relationship="viewControllers" id="Zwf-Tk-xoY"/>
-                        <segue destination="hw2-U3-rGV" kind="relationship" relationship="viewControllers" id="Sai-VJ-7a8"/>
                         <segue destination="LiB-3R-9IH" kind="relationship" relationship="viewControllers" id="922-Uz-1QS"/>
+                        <segue destination="AMI-zW-3Qb" kind="relationship" relationship="viewControllers" id="z3s-CG-a0P"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmB-wt-sxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1691" y="-374"/>
-        </scene>
-        <!--Professors-->
-        <scene sceneID="LYJ-kT-Zlp">
-            <objects>
-                <viewController id="hw2-U3-rGV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uzT-nS-nuK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="fEG-On-dUu"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Professors" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="81C-fI-7lN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxc-5i-osM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-81" y="386"/>
         </scene>
         <!--Grade-->
         <scene sceneID="UV6-8T-MGf">
@@ -83,14 +75,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="52M-56-Oc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-885" y="94"/>
+            <point key="canvasLocation" x="-1086" y="96"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

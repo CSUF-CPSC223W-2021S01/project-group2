@@ -14,7 +14,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="BVW-aZ-Gq9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Course Name" id="jdE-YL-Ggn">
                                 <cells>
@@ -41,7 +41,7 @@
                                                 <constraint firstItem="NjP-dr-TiY" firstAttribute="trailing" secondItem="YgW-Oh-FM2" secondAttribute="trailingMargin" id="lhe-Fr-q4K"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -70,7 +70,7 @@
                                                 <constraint firstItem="VZ4-5y-lDH" firstAttribute="centerY" secondItem="BZv-Ec-mFM" secondAttribute="centerY" id="nOc-bb-9DU"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -99,7 +99,7 @@
                                                 <constraint firstItem="CzJ-Ln-zlR" firstAttribute="top" secondItem="cft-D1-fDR" secondAttribute="topMargin" constant="-7" id="cFi-WT-soL"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -128,7 +128,7 @@
                                                 <constraint firstItem="7EX-qx-QaD" firstAttribute="centerY" secondItem="J8Y-gn-4hE" secondAttribute="centerY" id="e8Z-Dh-OxA"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -154,7 +154,7 @@
                                                 <constraint firstItem="DYj-8d-wcd" firstAttribute="leading" secondItem="I59-6p-uv5" secondAttribute="leadingMargin" id="rBB-mo-FMK"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -180,7 +180,7 @@
                                                 <constraint firstItem="PMc-aa-AbN" firstAttribute="trailing" secondItem="VX8-Oj-13a" secondAttribute="trailingMargin" id="xtK-SD-R5n"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -240,7 +240,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fht-lx-860">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoursesCellIdentifier" textLabel="ezM-Zi-7qB" detailTextLabel="puY-hr-Us5" rowHeight="74" style="IBUITableViewCellStyleSubtitle" id="ghB-q7-2sY">
                                 <rect key="frame" x="0.0" y="28" width="414" height="74"/>
@@ -265,7 +265,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <connections>
                                     <segue destination="bxH-jM-rWa" kind="presentation" identifier="EditCourse" id="zGm-iP-v4z"/>
                                 </connections>
@@ -315,8 +314,8 @@
         <image name="books.vertical" catalog="system" width="128" height="103"/>
         <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

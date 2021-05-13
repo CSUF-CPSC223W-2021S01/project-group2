@@ -13,6 +13,7 @@
 		7A2F137C25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
 		7A65DAE0264375E900FACC25 /* AssignmentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A65DADF264375E900FACC25 /* AssignmentsTest.swift */; };
 		A704336C264CE79400A6A4B7 /* Assignments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A704336B264CE79400A6A4B7 /* Assignments.storyboard */; };
+		A74F61C9264D3CB7002CE93F /* ProfessorsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74F61C8264D3CB7002CE93F /* ProfessorsList.storyboard */; };
 		A769BCCB25F9C74500EDD2D3 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769BCCA25F9C74500EDD2D3 /* Courses.swift */; };
 		A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */ = {isa = PBXBuildFile; fileRef = A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */; };
 		A769BCDB25F9D63F00EDD2D3 /* CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */; };
@@ -52,13 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		37ECBF05264D2B20001AA4DD /* Professor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Professor.storyboard; sourceTree = "<group>"; };
 		37ECBF06264D2B23001AA4DD /* ProfessorAddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorAddTableViewController.swift; sourceTree = "<group>"; };
 		37ECBF0B264D2B27001AA4DD /* ProfessorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorInfo.swift; sourceTree = "<group>"; };
 		37ECBF10264D2B2B001AA4DD /* ProfessorListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorListTableViewController.swift; sourceTree = "<group>"; };
 		7A2F137B25F9D88A00629063 /* Assignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignments.swift; sourceTree = "<group>"; };
 		7A65DADF264375E900FACC25 /* AssignmentsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsTest.swift; sourceTree = "<group>"; };
 		A704336B264CE79400A6A4B7 /* Assignments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assignments.storyboard; sourceTree = "<group>"; };
+		A74F61C8264D3CB7002CE93F /* ProfessorsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfessorsList.storyboard; sourceTree = "<group>"; };
 		A769BCCA25F9C74500EDD2D3 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 		A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = gitignoreFile; sourceTree = "<group>"; };
 		A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTests.swift; sourceTree = "<group>"; };
@@ -114,10 +115,10 @@
 		37ECBF18264D2B4A001AA4DD /* Professor */ = {
 			isa = PBXGroup;
 			children = (
-				37ECBF05264D2B20001AA4DD /* Professor.storyboard */,
 				37ECBF06264D2B23001AA4DD /* ProfessorAddTableViewController.swift */,
 				37ECBF0B264D2B27001AA4DD /* ProfessorInfo.swift */,
 				37ECBF10264D2B2B001AA4DD /* ProfessorListTableViewController.swift */,
+				A74F61C8264D3CB7002CE93F /* ProfessorsList.storyboard */,
 			);
 			path = Professor;
 			sourceTree = "<group>";
@@ -318,6 +319,7 @@
 			files = (
 				A7A44F8125ED70F500FB1989 /* LaunchScreen.storyboard in Resources */,
 				A7FBB322264D0472007F74CE /* Courses.storyboard in Resources */,
+				A74F61C9264D3CB7002CE93F /* ProfessorsList.storyboard in Resources */,
 				FE7BEFA0264D11A700B7E039 /* Grade.storyboard in Resources */,
 				A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */,
 				A7FBB31D264D0469007F74CE /* HomePage.storyboard in Resources */,
