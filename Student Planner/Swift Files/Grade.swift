@@ -29,8 +29,7 @@ class Grades {
         for posValue in gradePossible.values {
             possiblePoints += posValue
         }
-        grade = (recievedPoints/possiblePoints) * 100
-        
+        grade = round((recievedPoints/possiblePoints) * 100) * 100 / 100.0
         
         //printGrade = "\(grade)"
         
