@@ -23,10 +23,8 @@
 		A7A44F8125ED70F500FB1989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A44F7F25ED70F500FB1989 /* LaunchScreen.storyboard */; };
 		A7A44F8C25ED70F600FB1989 /* Student_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F8B25ED70F600FB1989 /* Student_PlannerTests.swift */; };
 		A7A44F9725ED70F600FB1989 /* Student_PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F9625ED70F600FB1989 /* Student_PlannerUITests.swift */; };
-		A7BB90F0264CC0F700B0F686 /* CourseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BB90EF264CC0F700B0F686 /* CourseStoryboard.storyboard */; };
 		A7F5D39D2649D83F0097A653 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5D39C2649D83F0097A653 /* CoursesTableViewController.swift */; };
 		A7F5D3AD264A2D4C0097A653 /* CourseDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5D3AC264A2D4C0097A653 /* CourseDetailTableViewController.swift */; };
-		A7FD24AF264CCA2200A5D079 /* HomePageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FD24AE264CCA2200A5D079 /* HomePageStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +65,8 @@
 		A7A44F9225ED70F600FB1989 /* Student PlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student PlannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A44F9625ED70F600FB1989 /* Student_PlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_PlannerUITests.swift; sourceTree = "<group>"; };
 		A7A44F9825ED70F600FB1989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7BB90EF264CC0F700B0F686 /* CourseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CourseStoryboard.storyboard; sourceTree = "<group>"; };
 		A7F5D39C2649D83F0097A653 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 		A7F5D3AC264A2D4C0097A653 /* CourseDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailTableViewController.swift; sourceTree = "<group>"; };
-		A7FD24AE264CCA2200A5D079 /* HomePageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePageStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +121,8 @@
 				A7A44F7D25ED70F500FB1989 /* Assets.xcassets */,
 				A7A44F7425ED70F400FB1989 /* AppDelegate.swift */,
 				A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */,
+				A7A44F7A25ED70F400FB1989 /* Main.storyboard */,
 				A7A44F7825ED70F400FB1989 /* ViewController.swift */,
-				A7BB90EE264CC0AD00B0F686 /* Storyboards */,
 				A7D90CBF26445567007097CC /* Courses */,
 				7A2F137B25F9D88A00629063 /* Assignments.swift */,
 				3748215C25FA888700F7D3EE /* ProfessorInfo.swift */,
@@ -154,16 +150,6 @@
 				A7A44F9825ED70F600FB1989 /* Info.plist */,
 			);
 			path = "Student PlannerUITests";
-			sourceTree = "<group>";
-		};
-		A7BB90EE264CC0AD00B0F686 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				A7A44F7A25ED70F400FB1989 /* Main.storyboard */,
-				A7BB90EF264CC0F700B0F686 /* CourseStoryboard.storyboard */,
-				A7FD24AE264CCA2200A5D079 /* HomePageStoryboard.storyboard */,
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		A7D90CBF26445567007097CC /* Courses */ = {
@@ -280,10 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7A44F8125ED70F500FB1989 /* LaunchScreen.storyboard in Resources */,
-				A7FD24AF264CCA2200A5D079 /* HomePageStoryboard.storyboard in Resources */,
 				A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */,
 				A7A44F7E25ED70F500FB1989 /* Assets.xcassets in Resources */,
-				A7BB90F0264CC0F700B0F686 /* CourseStoryboard.storyboard in Resources */,
 				A7A44F7C25ED70F400FB1989 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
