@@ -20,10 +20,10 @@
                             </navigationBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Student Planner" translatesAutoresizingMaskIntoConstraints="NO" id="lMQ-6d-sRE">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xhd-9a-B5S"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lMQ-6d-sRE" firstAttribute="trailing" secondItem="BpZ-u9-8Wd" secondAttribute="trailing" id="Jtu-jh-8Cw"/>
                             <constraint firstItem="lMQ-6d-sRE" firstAttribute="top" secondItem="JwS-Ws-kQh" secondAttribute="topMargin" constant="-44" id="eGv-KP-SC2"/>
@@ -47,4 +47,3 @@
         <image name="house.fill" catalog="system" width="128" height="106"/>
     </resources>
 </document>
-
