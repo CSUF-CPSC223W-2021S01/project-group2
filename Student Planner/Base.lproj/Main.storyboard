@@ -8,43 +8,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Classes-->
-        <scene sceneID="bD3-PT-1wW">
+        <!--HomePageStoryboard-->
+        <scene sceneID="aEx-wR-CeJ">
             <objects>
-                <viewController id="aNd-Hs-dAM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GNo-Hm-8KA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="YxT-hg-mXx"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Classes" id="DYY-VJ-BvR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gh2-Tu-ipj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="HomePageStoryboard" id="C8u-gF-DGe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="nFo-iA-xVX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JM9-uK-jpC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1590" y="352"/>
+            <point key="canvasLocation" x="-2359" y="96"/>
         </scene>
-        <!--Home -->
-        <scene sceneID="fy4-1h-rUp">
+        <!--CourseStoryboard-->
+        <scene sceneID="qpS-Yg-VRu">
             <objects>
-                <viewController id="SFs-bB-qHU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WfB-Fv-SCK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OH1-MF-QE9">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </navigationBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="shx-vV-WuN"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home " id="EeL-tF-vPM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2I7-GO-thj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="CourseStoryboard" id="q5v-I1-EtI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QBg-NP-KYx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CeC-Xd-D9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2343" y="352"/>
+            <point key="canvasLocation" x="-1936" y="96"/>
+        </scene>
+        <!--Assignments-->
+        <scene sceneID="AbW-4S-0bM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AssignmentsVC" storyboardName="Assignments" id="F1e-4Q-AeC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7qH-HY-T05"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTm-H9-1kV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1543" y="96"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wcf-pA-o2G">
@@ -56,141 +48,16 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="SFs-bB-qHU" kind="relationship" relationship="viewControllers" id="YZt-NJ-Pov"/>
-                        <segue destination="aNd-Hs-dAM" kind="relationship" relationship="viewControllers" id="NAe-H3-SRV"/>
+                        <segue destination="C8u-gF-DGe" kind="relationship" relationship="viewControllers" id="RUt-MM-ioc"/>
+                        <segue destination="q5v-I1-EtI" kind="relationship" relationship="viewControllers" id="Zw3-4S-bT3"/>
+                        <segue destination="F1e-4Q-AeC" kind="relationship" relationship="viewControllers" id="Zwf-Tk-xoY"/>
                         <segue destination="abC-9i-Gqg" kind="relationship" relationship="viewControllers" id="F1l-qZ-2XB"/>
-                        <segue destination="XFh-E9-FOW" kind="relationship" relationship="viewControllers" id="NFZ-EQ-5U6"/>
+                        <segue destination="hw2-U3-rGV" kind="relationship" relationship="viewControllers" id="Sai-VJ-7a8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmB-wt-sxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1691" y="-374"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="oVg-1b-NG5">
-            <objects>
-                <viewController id="7wy-gF-rmJ" customClass="ViewController" customModule="Student_Planner" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HYz-Sn-Vrf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="assignments add page" translatesAutoresizingMaskIntoConstraints="NO" id="pqk-dF-c6M">
-                                <rect key="frame" x="-65" y="-86" width="915" height="1108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XI2-Eh-ccV">
-                                <rect key="frame" x="57" y="396" width="300" height="50"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chc-9v-b0D">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="KML-gQ-f5B"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="S29-rm-rdf"/>
-                                    <constraint firstAttribute="height" constant="50" id="x9c-LA-0Z2"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="a62-si-WJD">
-                                <rect key="frame" x="77" y="146" width="260" height="250"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Assignment Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90q-NL-Kbc">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Due Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODK-64-bvm">
-                                        <rect key="frame" x="0.0" y="73.5" width="260" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCp-4O-JPd">
-                                        <rect key="frame" x="0.0" y="147" width="260" height="103"/>
-                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="29"/>
-                                        <state key="normal" title="Add Assignment">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="addAssignment:" destination="7wy-gF-rmJ" eventType="touchUpInside" id="C0g-My-jsx"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="Bb2-3r-Mfe"/>
-                                    <constraint firstAttribute="height" constant="250" id="u8t-Gj-qFT"/>
-                                </constraints>
-                            </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D8e-OY-efS">
-                                <rect key="frame" x="87" y="471" width="240" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="28B-lH-ebY"/>
-                                    <constraint firstAttribute="width" constant="240" id="aeg-Ji-Hnf"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="GFu-IL-D6I"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="XI2-Eh-ccV" firstAttribute="centerX" secondItem="HYz-Sn-Vrf" secondAttribute="centerX" id="4wd-E8-UTX"/>
-                            <constraint firstItem="a62-si-WJD" firstAttribute="centerX" secondItem="HYz-Sn-Vrf" secondAttribute="centerX" id="AVW-dL-8Rh"/>
-                            <constraint firstItem="D8e-OY-efS" firstAttribute="centerX" secondItem="HYz-Sn-Vrf" secondAttribute="centerX" id="KEl-79-WuN"/>
-                            <constraint firstItem="D8e-OY-efS" firstAttribute="centerY" secondItem="HYz-Sn-Vrf" secondAttribute="centerY" constant="150" id="iqM-kG-Iz5"/>
-                            <constraint firstItem="XI2-Eh-ccV" firstAttribute="centerY" secondItem="HYz-Sn-Vrf" secondAttribute="centerY" id="lC2-kv-9FT"/>
-                            <constraint firstItem="a62-si-WJD" firstAttribute="centerY" secondItem="HYz-Sn-Vrf" secondAttribute="centerY" constant="-150" id="pIX-WC-CJO"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="CNm-uo-XPC"/>
-                    <connections>
-                        <outlet property="DueDate" destination="ODK-64-bvm" id="HHe-qC-0tI"/>
-                        <outlet property="assignName" destination="90q-NL-Kbc" id="GAD-A8-Wci"/>
-                        <outlet property="count" destination="Chc-9v-b0D" id="8Rf-P6-tSM"/>
-                        <outlet property="list" destination="D8e-OY-efS" id="h6Q-K3-3kz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cdK-Ny-7ez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-772.46376811594212" y="1111.6071428571429"/>
-        </scene>
-        <!--Assignments-->
-        <scene sceneID="MGF-gh-U5i">
-            <objects>
-                <viewController id="XFh-E9-FOW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OcR-0x-aX5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main assignment page" translatesAutoresizingMaskIntoConstraints="NO" id="Imd-BM-tXo">
-                                <rect key="frame" x="-200" y="-269" width="973" height="1498"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5c-sP-qXC">
-                                <rect key="frame" x="148" y="736" width="118" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
-                                <state key="normal" title="Next Page">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="7wy-gF-rmJ" kind="showDetail" id="Ggo-hN-yuk"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="sPe-sf-edg"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Assignments" id="sxk-BM-uJS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yJ8-7B-01h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-772.46376811594212" y="361.60714285714283"/>
         </scene>
         <!--Grades-->
         <scene sceneID="I4s-Dh-noy">
@@ -201,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="dAh-15-KeX">
-                                <rect key="frame" x="-57" y="55" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <viewLayoutGuide key="safeArea" id="dLy-DF-6Gy"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -210,30 +77,36 @@
                         <viewLayoutGuide key="safeArea" id="34m-7V-rnv"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Grades" id="kIt-gx-Uzg"/>
+                    <tabBarItem key="tabBarItem" title="Grades" image="lightbulb" catalog="system" selectedImage="lightbulb.fill" id="kIt-gx-Uzg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzB-LQ-Pfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="352"/>
+            <point key="canvasLocation" x="-901" y="387"/>
+        </scene>
+        <!--Professors-->
+        <scene sceneID="LYJ-kT-Zlp">
+            <objects>
+                <viewController id="hw2-U3-rGV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uzT-nS-nuK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fEG-On-dUu"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Professors" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="81C-fI-7lN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxc-5i-osM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="386"/>
         </scene>
     </scenes>
     <resources>
-        <image name="assignments add page" width="2442" height="2442"/>
-        <image name="main assignment page" width="2442" height="2442"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="lightbulb" catalog="system" width="113" height="128"/>
+        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

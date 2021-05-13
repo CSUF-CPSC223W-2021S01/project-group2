@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		3748215D25FA888700F7D3EE /* ProfessorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748215C25FA888700F7D3EE /* ProfessorInfo.swift */; };
 		7A2F137C25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
-		7A2F137D25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
-		7A2F137E25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
 		7A65DAE0264375E900FACC25 /* AssignmentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A65DADF264375E900FACC25 /* AssignmentsTest.swift */; };
+		A7043366264CE6A900A6A4B7 /* HomePageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7043364264CE6A900A6A4B7 /* HomePageStoryboard.storyboard */; };
+		A7043367264CE6A900A6A4B7 /* CourseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7043365264CE6A900A6A4B7 /* CourseStoryboard.storyboard */; };
+		A704336C264CE79400A6A4B7 /* Assignments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A704336B264CE79400A6A4B7 /* Assignments.storyboard */; };
 		A769BCCB25F9C74500EDD2D3 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769BCCA25F9C74500EDD2D3 /* Courses.swift */; };
 		A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */ = {isa = PBXBuildFile; fileRef = A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */; };
 		A769BCDB25F9D63F00EDD2D3 /* CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */; };
@@ -48,6 +49,9 @@
 		3748215C25FA888700F7D3EE /* ProfessorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorInfo.swift; sourceTree = "<group>"; };
 		7A2F137B25F9D88A00629063 /* Assignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignments.swift; sourceTree = "<group>"; };
 		7A65DADF264375E900FACC25 /* AssignmentsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsTest.swift; sourceTree = "<group>"; };
+		A7043364264CE6A900A6A4B7 /* HomePageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomePageStoryboard.storyboard; path = "../../../Kaylee-Branch-Final-Project/Student Planner/Storyboards/HomePageStoryboard.storyboard"; sourceTree = "<group>"; };
+		A7043365264CE6A900A6A4B7 /* CourseStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CourseStoryboard.storyboard; path = "../../../Kaylee-Branch-Final-Project/Student Planner/Storyboards/CourseStoryboard.storyboard"; sourceTree = "<group>"; };
+		A704336B264CE79400A6A4B7 /* Assignments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assignments.storyboard; sourceTree = "<group>"; };
 		A769BCCA25F9C74500EDD2D3 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 		A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = gitignoreFile; sourceTree = "<group>"; };
 		A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTests.swift; sourceTree = "<group>"; };
@@ -94,6 +98,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7043363264CE68700A6A4B7 /* Tab Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A7043365264CE6A900A6A4B7 /* CourseStoryboard.storyboard */,
+				A7043364264CE6A900A6A4B7 /* HomePageStoryboard.storyboard */,
+				A704336B264CE79400A6A4B7 /* Assignments.storyboard */,
+			);
+			path = "Tab Storyboards";
+			sourceTree = "<group>";
+		};
+		A7043370264CE9A000A6A4B7 /* Swift Files */ = {
+			isa = PBXGroup;
+			children = (
+				A769BCCA25F9C74500EDD2D3 /* Courses.swift */,
+				7A2F137B25F9D88A00629063 /* Assignments.swift */,
+				3748215C25FA888700F7D3EE /* ProfessorInfo.swift */,
+			);
+			path = "Swift Files";
+			sourceTree = "<group>";
+		};
+		A7043377264CE9E300A6A4B7 /* Tab ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7F5D39C2649D83F0097A653 /* CoursesTableViewController.swift */,
+				A7F5D3AC264A2D4C0097A653 /* CourseDetailTableViewController.swift */,
+			);
+			path = "Tab ViewControllers";
+			sourceTree = "<group>";
+		};
 		A7A44F6825ED70F400FB1989 = {
 			isa = PBXGroup;
 			children = (
@@ -121,12 +154,12 @@
 				A7A44F7D25ED70F500FB1989 /* Assets.xcassets */,
 				A7A44F7425ED70F400FB1989 /* AppDelegate.swift */,
 				A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */,
-				A7A44F7A25ED70F400FB1989 /* Main.storyboard */,
 				A7A44F7825ED70F400FB1989 /* ViewController.swift */,
-				A7D90CBF26445567007097CC /* Courses */,
-				7A2F137B25F9D88A00629063 /* Assignments.swift */,
-				3748215C25FA888700F7D3EE /* ProfessorInfo.swift */,
 				A7A44F7F25ED70F500FB1989 /* LaunchScreen.storyboard */,
+				A7A44F7A25ED70F400FB1989 /* Main.storyboard */,
+				A7043363264CE68700A6A4B7 /* Tab Storyboards */,
+				A7043370264CE9A000A6A4B7 /* Swift Files */,
+				A7043377264CE9E300A6A4B7 /* Tab ViewControllers */,
 				A7A44F8225ED70F500FB1989 /* Info.plist */,
 			);
 			path = "Student Planner";
@@ -150,16 +183,6 @@
 				A7A44F9825ED70F600FB1989 /* Info.plist */,
 			);
 			path = "Student PlannerUITests";
-			sourceTree = "<group>";
-		};
-		A7D90CBF26445567007097CC /* Courses */ = {
-			isa = PBXGroup;
-			children = (
-				A769BCCA25F9C74500EDD2D3 /* Courses.swift */,
-				A7F5D39C2649D83F0097A653 /* CoursesTableViewController.swift */,
-				A7F5D3AC264A2D4C0097A653 /* CourseDetailTableViewController.swift */,
-			);
-			path = Courses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +290,11 @@
 			files = (
 				A7A44F8125ED70F500FB1989 /* LaunchScreen.storyboard in Resources */,
 				A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */,
+				A7043367264CE6A900A6A4B7 /* CourseStoryboard.storyboard in Resources */,
 				A7A44F7E25ED70F500FB1989 /* Assets.xcassets in Resources */,
 				A7A44F7C25ED70F400FB1989 /* Main.storyboard in Resources */,
+				A7043366264CE6A900A6A4B7 /* HomePageStoryboard.storyboard in Resources */,
+				A704336C264CE79400A6A4B7 /* Assignments.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A65DAE0264375E900FACC25 /* AssignmentsTest.swift in Sources */,
-				7A2F137D25F9D88A00629063 /* Assignments.swift in Sources */,
 				A769BCDB25F9D63F00EDD2D3 /* CoursesTests.swift in Sources */,
 				A7A44F8C25ED70F600FB1989 /* Student_PlannerTests.swift in Sources */,
 			);
@@ -319,7 +344,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2F137E25F9D88A00629063 /* Assignments.swift in Sources */,
 				A7A44F9725ED70F600FB1989 /* Student_PlannerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
