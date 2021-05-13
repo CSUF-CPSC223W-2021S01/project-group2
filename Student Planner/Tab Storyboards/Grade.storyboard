@@ -11,7 +11,7 @@
         <!--Grades-->
         <scene sceneID="8tM-tz-8rU">
             <objects>
-                <viewController storyboardIdentifier="gradeVC" id="UrR-0Z-4MM" customClass="Assignments" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gradeVC" id="UrR-0Z-4MM" customClass="GradeViewController" customModule="Student_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dYb-eR-sVT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,9 @@
                                 <state key="normal" title="Add Assignment">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addAssignGrade:" destination="UrR-0Z-4MM" eventType="touchUpInside" id="TAY-64-zI6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-j9-Yzn">
                                 <rect key="frame" x="147" y="535" width="139" height="20.5"/>
@@ -81,11 +84,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Grades" image="lightbulb" catalog="system" selectedImage="lightbulb.fill" id="cXT-5w-XcQ"/>
                     <connections>
-                        <outlet property="AssignmentName" destination="RJH-8S-V4n" id="nIM-BX-23c"/>
-                        <outlet property="Assignmentname" destination="RJH-8S-V4n" id="K5e-2Q-buZ"/>
-                        <outlet property="Grade" destination="EZq-8b-FRf" id="uUF-Ku-KoB"/>
-                        <outlet property="PointsPos" destination="V5t-aM-u57" id="xdM-Ez-dd8"/>
-                        <outlet property="PointsRec" destination="ZJN-DI-QdM" id="6Ra-b1-CiK"/>
+                        <outlet property="assignmentName" destination="RJH-8S-V4n" id="lWr-c9-ElB"/>
+                        <outlet property="grade" destination="EZq-8b-FRf" id="C5T-Nw-7o1"/>
+                        <outlet property="pointsPos" destination="V5t-aM-u57" id="7yV-nc-b9c"/>
+                        <outlet property="pointsRec" destination="ZJN-DI-QdM" id="KPM-xh-9sh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dz-LK-M76" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

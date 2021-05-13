@@ -16,13 +16,15 @@ class GradeViewController: UIViewController {
 
     @IBAction func addAssignGrade(_ sender: UIButton) {
         let assignName = String(assignmentName.text!)
-        let recPoints = Int(pointsRec.text!)
-        let posPoints = Int(pointsPos.text!)
-        grades?.add(name: assignName, gradeRec: recPoints!, gradePos: posPoints!)
+        let recPoints = Double(pointsRec.text!)!
+        let posPoints = Double(pointsPos.text!)!
+        grades?.add(name: assignName, gradeRec: recPoints, gradePos: posPoints)
+        grades?.calcGrade()
         assignmentName?.text = ""
         pointsRec?.text = ""
         pointsPos?.text = ""
-        grade?.text = String(grades!.grade)
+        //print(grades!.printGrade)
+        grade.text = String(grades!.grade)
         
     }
 

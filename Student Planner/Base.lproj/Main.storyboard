@@ -51,37 +51,13 @@
                         <segue destination="C8u-gF-DGe" kind="relationship" relationship="viewControllers" id="RUt-MM-ioc"/>
                         <segue destination="q5v-I1-EtI" kind="relationship" relationship="viewControllers" id="Zw3-4S-bT3"/>
                         <segue destination="F1e-4Q-AeC" kind="relationship" relationship="viewControllers" id="Zwf-Tk-xoY"/>
-                        <segue destination="abC-9i-Gqg" kind="relationship" relationship="viewControllers" id="F1l-qZ-2XB"/>
                         <segue destination="hw2-U3-rGV" kind="relationship" relationship="viewControllers" id="Sai-VJ-7a8"/>
+                        <segue destination="LiB-3R-9IH" kind="relationship" relationship="viewControllers" id="922-Uz-1QS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmB-wt-sxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1691" y="-374"/>
-        </scene>
-        <!--Grades-->
-        <scene sceneID="I4s-Dh-noy">
-            <objects>
-                <viewController id="abC-9i-Gqg" customClass="Assignments" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ez7-Eq-WAt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="dAh-15-KeX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <viewLayoutGuide key="safeArea" id="dLy-DF-6Gy"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="34m-7V-rnv"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Grades" image="lightbulb" catalog="system" selectedImage="lightbulb.fill" id="kIt-gx-Uzg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jzB-LQ-Pfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-901" y="387"/>
         </scene>
         <!--Professors-->
         <scene sceneID="LYJ-kT-Zlp">
@@ -99,15 +75,20 @@
             </objects>
             <point key="canvasLocation" x="-81" y="386"/>
         </scene>
+        <!--Grade-->
+        <scene sceneID="UV6-8T-MGf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="gradeVC" storyboardName="Grade" id="LiB-3R-9IH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="0ug-ah-6yd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="52M-56-Oc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-885" y="94"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="lightbulb" catalog="system" width="113" height="128"/>
-        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
