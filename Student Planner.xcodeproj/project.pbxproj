@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3748215D25FA888700F7D3EE /* ProfessorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748215C25FA888700F7D3EE /* ProfessorInfo.swift */; };
-		7A298320264CD41C004DA6C7 /* Assignments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A29831F264CD41C004DA6C7 /* Assignments.storyboard */; };
 		7A2F137C25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
 		7A2F137D25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
 		7A2F137E25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
@@ -47,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		3748215C25FA888700F7D3EE /* ProfessorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorInfo.swift; sourceTree = "<group>"; };
-		7A29831F264CD41C004DA6C7 /* Assignments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assignments.storyboard; sourceTree = "<group>"; };
 		7A2F137B25F9D88A00629063 /* Assignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignments.swift; sourceTree = "<group>"; };
 		7A65DADF264375E900FACC25 /* AssignmentsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsTest.swift; sourceTree = "<group>"; };
 		A769BCCA25F9C74500EDD2D3 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				A7A44F7425ED70F400FB1989 /* AppDelegate.swift */,
 				A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */,
 				A7A44F7A25ED70F400FB1989 /* Main.storyboard */,
-				7A29831F264CD41C004DA6C7 /* Assignments.storyboard */,
 				A7A44F7825ED70F400FB1989 /* ViewController.swift */,
 				A7D90CBF26445567007097CC /* Courses */,
 				7A2F137B25F9D88A00629063 /* Assignments.swift */,
@@ -271,7 +268,6 @@
 				A7A44F8125ED70F500FB1989 /* LaunchScreen.storyboard in Resources */,
 				A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */,
 				A7A44F7E25ED70F500FB1989 /* Assets.xcassets in Resources */,
-				7A298320264CD41C004DA6C7 /* Assignments.storyboard in Resources */,
 				A7A44F7C25ED70F400FB1989 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
