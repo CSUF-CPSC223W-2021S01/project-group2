@@ -122,35 +122,43 @@
 			path = Professor;
 			sourceTree = "<group>";
 		};
-		A7043363264CE68700A6A4B7 /* Tab Storyboards */ = {
+		A74F61E5264D7FB9002CE93F /* Courses */ = {
 			isa = PBXGroup;
 			children = (
-				FE7BEF9D264D11A700B7E039 /* Grade.storyboard */,
-				A704336B264CE79400A6A4B7 /* Assignments.storyboard */,
-				A7FBB31C264D0469007F74CE /* HomePage.storyboard */,
-				A7FBB321264D0472007F74CE /* Courses.storyboard */,
-			);
-			path = "Tab Storyboards";
-			sourceTree = "<group>";
-		};
-		A7043370264CE9A000A6A4B7 /* Swift Files */ = {
-			isa = PBXGroup;
-			children = (
-				FE7BEF9C264D11A700B7E039 /* Grade.swift */,
 				A769BCCA25F9C74500EDD2D3 /* Courses.swift */,
-				7A2F137B25F9D88A00629063 /* Assignments.swift */,
-			);
-			path = "Swift Files";
-			sourceTree = "<group>";
-		};
-		A7043377264CE9E300A6A4B7 /* Tab ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				FE7BEF9B264D11A700B7E039 /* GradeViewController.swift */,
+				A7FBB321264D0472007F74CE /* Courses.storyboard */,
 				A7F5D39C2649D83F0097A653 /* CoursesTableViewController.swift */,
 				A7F5D3AC264A2D4C0097A653 /* CourseDetailTableViewController.swift */,
 			);
-			path = "Tab ViewControllers";
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		A74F61E6264D7FD2002CE93F /* Grades */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BEF9C264D11A700B7E039 /* Grade.swift */,
+				FE7BEF9D264D11A700B7E039 /* Grade.storyboard */,
+				FE7BEF9B264D11A700B7E039 /* GradeViewController.swift */,
+			);
+			path = Grades;
+			sourceTree = "<group>";
+		};
+		A74F61E7264D7FEC002CE93F /* Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				7A2F137B25F9D88A00629063 /* Assignments.swift */,
+				A704336B264CE79400A6A4B7 /* Assignments.storyboard */,
+				A7A44F7825ED70F400FB1989 /* ViewController.swift */,
+			);
+			path = Assignments;
+			sourceTree = "<group>";
+		};
+		A74F61E8264D801F002CE93F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A7FBB31C264D0469007F74CE /* HomePage.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		A7A44F6825ED70F400FB1989 = {
@@ -177,16 +185,16 @@
 		A7A44F7325ED70F400FB1989 /* Student Planner */ = {
 			isa = PBXGroup;
 			children = (
-				37ECBF18264D2B4A001AA4DD /* Professor */,
 				A7A44F7D25ED70F500FB1989 /* Assets.xcassets */,
 				A7A44F7425ED70F400FB1989 /* AppDelegate.swift */,
 				A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */,
-				A7A44F7825ED70F400FB1989 /* ViewController.swift */,
 				A7A44F7F25ED70F500FB1989 /* LaunchScreen.storyboard */,
 				A7A44F7A25ED70F400FB1989 /* Main.storyboard */,
-				A7043363264CE68700A6A4B7 /* Tab Storyboards */,
-				A7043370264CE9A000A6A4B7 /* Swift Files */,
-				A7043377264CE9E300A6A4B7 /* Tab ViewControllers */,
+				A74F61E8264D801F002CE93F /* Home */,
+				A74F61E5264D7FB9002CE93F /* Courses */,
+				A74F61E7264D7FEC002CE93F /* Assignments */,
+				A74F61E6264D7FD2002CE93F /* Grades */,
+				37ECBF18264D2B4A001AA4DD /* Professor */,
 				A7A44F8225ED70F500FB1989 /* Info.plist */,
 			);
 			path = "Student Planner";
