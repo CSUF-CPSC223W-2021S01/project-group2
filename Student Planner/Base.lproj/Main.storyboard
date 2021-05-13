@@ -8,20 +8,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HomePageStoryboard-->
+        <!--HomePage-->
         <scene sceneID="aEx-wR-CeJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomePageStoryboard" id="C8u-gF-DGe" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="HomePageVC" storyboardName="HomePage" id="C8u-gF-DGe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="nFo-iA-xVX"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JM9-uK-jpC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2359" y="96"/>
         </scene>
-        <!--CourseStoryboard-->
+        <!--Courses-->
         <scene sceneID="qpS-Yg-VRu">
             <objects>
-                <viewControllerPlaceholder storyboardName="CourseStoryboard" id="q5v-I1-EtI" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="CoursesVC" storyboardName="Courses" id="q5v-I1-EtI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="QBg-NP-KYx"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeC-Xd-D9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
