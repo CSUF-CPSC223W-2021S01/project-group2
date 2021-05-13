@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Professor: Codable {
+struct Professor: Codable { 
     var profName: String
     var profEmail: String?
     var course: String?

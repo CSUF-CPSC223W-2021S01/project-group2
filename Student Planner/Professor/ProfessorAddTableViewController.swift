@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfessorAddTableViewController: UITableViewController, UITextFieldDelegate {
+class ProfessorAddTableViewController: UITableViewController, UITextFieldDelegate { 
     
     @IBOutlet var nameText: UITextField!
     @IBOutlet var emailText: UITextField!
