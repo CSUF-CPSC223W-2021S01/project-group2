@@ -265,6 +265,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <connections>
                                     <segue destination="bxH-jM-rWa" kind="presentation" identifier="EditCourse" id="zGm-iP-v4z"/>
                                 </connections>
