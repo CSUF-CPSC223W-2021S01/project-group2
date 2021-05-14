@@ -9,7 +9,10 @@ class GradeViewController: UIViewController {
     
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        //super.viewDidLoad()
+        if let savedGrades = Grades.decodeGrades() {
+            grade.text = String(grades!.grade)
+        }
     }
     
 
