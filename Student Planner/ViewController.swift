@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     var assign = Assignments()
     // End Assigment Section ----------------
     override func viewDidLoad() {
+        if let savedAssignments = Assignments.decodeAssignments() {
+            list.text = assign?.printDictionary
+            count.text = assign?.printCount
+        }
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
