@@ -15,7 +15,7 @@ class ProfessorListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(nextView))
     }
 }
 
@@ -29,6 +29,9 @@ extension ProfessorListTableViewController {
         let cell = ProfessorItem.dequeueReusableCell(withIdentifier: "ProfCell", for: indexPath)
         cell.textLabel?.text = prof[indexPath.row].profName
         return cell
+    }
+    @objc func nextView(){
+        //navigationController?.pushViewController(ProfessorAddTableViewController(), animated: true)
     }
     
 }

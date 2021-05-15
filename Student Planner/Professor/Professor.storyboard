@@ -184,7 +184,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Professor" id="E0L-DW-jK8">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="eJa-OT-18g"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="pvH-T1-MA6"/>
                     </navigationItem>
                     <connections>
                         <outlet property="courseText" destination="Xq6-Ht-eE5" id="OFm-X6-yYG"/>

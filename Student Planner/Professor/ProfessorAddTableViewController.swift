@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfessorAddTableViewController: UITableViewController, UITextFieldDelegate { 
+class ProfessorAddTableViewController: UITableViewController, UITextFieldDelegate {
     
     @IBOutlet var nameText: UITextField!
     @IBOutlet var emailText: UITextField!
@@ -18,27 +18,34 @@ class ProfessorAddTableViewController: UITableViewController, UITextFieldDelegat
     @IBOutlet var websiteText: UITextField!
     
     var prof: Professor?
-    
+    var update: (() -> Void)?
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameText.text = prof?.profName
+        emailText.text = prof?.profEmail
+        courseText.text = prof?.profEmail
+        officeLocationText.text = prof?.officeLocation
+        officeHoursText.text = prof?.officeHours
+        phoneNumText.text = prof?.phoneNum
+        websiteText.text = prof?.website
         
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let profName = nameText.text!
-        let profEmail = emailText.text!
-        let course = courseText.text!
-        let officeLocation = officeLocationText.text!
-        let officeHours = officeHoursText.text!
-        let phoneNum = phoneNumText.text!
-        let website = websiteText.text!
-    }
-
-}
-
-extension ViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveInfo))
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        saveInfo()
+        return true
+    }
+
+    @objc func saveInfo() {
+        //save the user info to prof
+        prof = Professor(profName: nameText.text!, profEmail: emailText.text!, course: courseText.text!, officeLocation: officeLocationText.text!, officeHours: officeHoursText.text!, phoneNum: courseText.text!, website: websiteText.text!)
+        print(prof)
+        ProfArray.append(prof!)
+        //return to previous view - none of these work because this class was not pushed onto the stack.
+        //self.navigationController?.popToViewController(ProfessorListTableViewController(), animated: true)
+        //navigationController?.pushViewController(ProfessorListTableViewController(), animated: true)
+        //self.present(ProfessorListTableViewController(), animated: true, completion: update )
+        //self.navigationController?.popViewController(animated: true)
+    }
 }
