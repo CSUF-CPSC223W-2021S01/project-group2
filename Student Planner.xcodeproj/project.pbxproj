@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37014B71264FA12900A3900F /* ProfessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37014B70264FA12900A3900F /* ProfessorTests.swift */; };
 		37ECBF07264D2B23001AA4DD /* ProfessorAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECBF06264D2B23001AA4DD /* ProfessorAddTableViewController.swift */; };
 		37ECBF0C264D2B27001AA4DD /* ProfessorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECBF0B264D2B27001AA4DD /* ProfessorInfo.swift */; };
 		37ECBF11264D2B2B001AA4DD /* ProfessorListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECBF10264D2B2B001AA4DD /* ProfessorListTableViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37014B70264FA12900A3900F /* ProfessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorTests.swift; sourceTree = "<group>"; };
 		37ECBF05264D2B20001AA4DD /* Professor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Professor.storyboard; sourceTree = "<group>"; };
 		37ECBF06264D2B23001AA4DD /* ProfessorAddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorAddTableViewController.swift; sourceTree = "<group>"; };
 		37ECBF0B264D2B27001AA4DD /* ProfessorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorInfo.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				7A65DADF264375E900FACC25 /* AssignmentsTest.swift */,
 				A7A44F8D25ED70F600FB1989 /* Info.plist */,
 				A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */,
+				37014B70264FA12900A3900F /* ProfessorTests.swift */,
 			);
 			path = "Student PlannerTests";
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37014B71264FA12900A3900F /* ProfessorTests.swift in Sources */,
 				7A65DAE0264375E900FACC25 /* AssignmentsTest.swift in Sources */,
 				FEE4485D264D26D1000F5B92 /* GradeTests.swift in Sources */,
 				A769BCDB25F9D63F00EDD2D3 /* CoursesTests.swift in Sources */,

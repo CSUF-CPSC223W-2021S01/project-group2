@@ -51,7 +51,7 @@
                         <segue destination="q5v-I1-EtI" kind="relationship" relationship="viewControllers" id="Zw3-4S-bT3"/>
                         <segue destination="F1e-4Q-AeC" kind="relationship" relationship="viewControllers" id="Zwf-Tk-xoY"/>
                         <segue destination="LiB-3R-9IH" kind="relationship" relationship="viewControllers" id="922-Uz-1QS"/>
-                        <segue destination="8wB-IL-apm" kind="relationship" relationship="viewControllers" id="zbl-Yb-byQ"/>
+                        <segue destination="61t-jn-oJo" kind="relationship" relationship="viewControllers" id="wOo-Ac-PqV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmB-wt-sxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,68 +69,68 @@
             <point key="canvasLocation" x="-885" y="94"/>
         </scene>
         <!--Professors-->
-        <scene sceneID="qtl-Ws-jUV">
+        <scene sceneID="H1j-Q7-3rb">
             <objects>
-                <tableViewController id="HuS-jv-Z3H" customClass="ProfessorListTableViewController" customModule="Student_Planner" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u8b-z4-3NF">
+                <tableViewController id="pbi-dA-Nc8" customClass="ProfessorListTableViewController" customModule="Student_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yt7-7g-1fG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="h9N-fZ-SCc" userLabel="ProfCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lHv-LM-E0X" userLabel="ProfCell">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h9N-fZ-SCc" id="71N-BQ-UHc">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lHv-LM-E0X" id="Zbf-yT-HuZ">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="HuS-jv-Z3H" id="kMT-da-lur"/>
-                            <outlet property="delegate" destination="HuS-jv-Z3H" id="U7E-W6-Gjw"/>
+                            <outlet property="dataSource" destination="pbi-dA-Nc8" id="N19-0g-Ce4"/>
+                            <outlet property="delegate" destination="pbi-dA-Nc8" id="aU7-V7-Uao"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Professors" id="Qep-9u-P9L">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="UKr-fI-YUp">
+                    <navigationItem key="navigationItem" title="Professors" id="J9e-72-zhg">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="A4f-hr-KGi">
                             <connections>
-                                <segue destination="BkW-74-5ap" kind="popoverPresentation" popoverAnchorBarButtonItem="UKr-fI-YUp" id="Im1-dA-NzW">
+                                <segue destination="48r-Me-lCB" kind="popoverPresentation" popoverAnchorBarButtonItem="A4f-hr-KGi" id="kiL-EP-RUg">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                 </segue>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="ProfessorItem" destination="u8b-z4-3NF" id="c7W-JO-LKZ"/>
+                        <outlet property="ProfessorItem" destination="yt7-7g-1fG" id="dlN-cm-oAh"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yMp-W4-f27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXx-ST-2ZV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="726" y="-310"/>
         </scene>
         <!--Add Professor-->
-        <scene sceneID="K7y-S4-yv0">
+        <scene sceneID="g1L-J1-lXa">
             <objects>
-                <tableViewController id="9rf-V6-4rd" customClass="ProfessorAddTableViewController" customModule="Student_Planner" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YEl-bz-n0L">
+                <tableViewController id="JzE-g4-uX0" customClass="ProfessorAddTableViewController" customModule="Student_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8OY-Xp-ImE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" axis="vertical" id="qrW-Dc-2ri">
+                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" axis="vertical" id="ifB-jE-2DB">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </stackView>
                         <sections>
-                            <tableViewSection id="b0j-Hh-B2c">
+                            <tableViewSection id="uNw-gI-jFf">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wMe-1j-Smr" userLabel="Name Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XqS-gu-p7s" userLabel="Name Cell">
                                         <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wMe-1j-Smr" id="Ssm-jL-QEw">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XqS-gu-p7s" id="s0J-Tv-bNc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-NV-2YP" userLabel="Name Text Field">
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1l-dh-9Wv" userLabel="Name Text Field">
                                                     <rect key="frame" x="20" y="4" width="230" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -139,14 +139,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="C1o-Uh-eoA" userLabel="Email Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GEQ-bC-xTJ" userLabel="Email Cell">
                                         <rect key="frame" x="0.0" y="115.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C1o-Uh-eoA" id="iaA-F0-8Oq">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GEQ-bC-xTJ" id="LeA-fz-fC3">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7j-Hm-7ao" userLabel="Name Text Field">
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BbY-p9-SjL" userLabel="Name Text Field">
                                                     <rect key="frame" x="20" y="5" width="230" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -155,14 +155,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0dd-fV-EDZ" userLabel="Course Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pWk-VB-hS2" userLabel="Course Cell">
                                         <rect key="frame" x="0.0" y="159" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0dd-fV-EDZ" id="MeB-eY-hq7">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pWk-VB-hS2" id="uTa-1Q-uAj">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v8h-Zd-WJj" userLabel="Name Text Field">
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cb9-e8-zbg" userLabel="Name Text Field">
                                                     <rect key="frame" x="20" y="4" width="230" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -171,14 +171,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lZI-Xr-463" userLabel="Office Location Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VFR-DD-Mbr" userLabel="Office Location Cell">
                                         <rect key="frame" x="0.0" y="202.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lZI-Xr-463" id="Bv3-Jj-ajc">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VFR-DD-Mbr" id="Otz-zf-QEu">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Office Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AUY-jm-meI" userLabel="Name Text Field">
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Office Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ee-ic-iRN" userLabel="Name Text Field">
                                                     <rect key="frame" x="20" y="5" width="230" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -187,14 +187,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DWw-eu-oGn" userLabel="Office Hours Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gfJ-fY-vFz" userLabel="Office Hours Cell">
                                         <rect key="frame" x="0.0" y="246" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DWw-eu-oGn" id="PMJ-Ph-pWB">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gfJ-fY-vFz" id="fVp-25-rku">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Office Hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jpm-gm-AZN" userLabel="Name Text Field">
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Office Hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uuW-zz-EMx" userLabel="Name Text Field">
                                                     <rect key="frame" x="20" y="4" width="230" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -203,14 +203,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bHS-J0-iIQ" userLabel="Phone Number Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nWl-fo-t0T" userLabel="Phone Number Cell">
                                         <rect key="frame" x="0.0" y="289.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bHS-J0-iIQ" id="Zfr-Zd-4To">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nWl-fo-t0T" id="KHL-nc-Gut">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOi-3h-mGB" userLabel="Name Text Field">
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nAD-Ev-YIm" userLabel="Name Text Field">
                                                     <rect key="frame" x="20" y="5" width="230" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -219,14 +219,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rxs-Tu-R9B" userLabel="Email Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="X5c-Eb-SkU" userLabel="Email Cell">
                                         <rect key="frame" x="0.0" y="333" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rxs-Tu-R9B" id="EG9-82-9C9">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5c-Eb-SkU" id="T9T-uH-CzI">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Website" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCo-ib-frr" userLabel="Name Text Field">
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Website" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ogh-9g-KyS" userLabel="Name Text Field">
                                                     <rect key="frame" x="20" y="4" width="230" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -239,50 +239,49 @@
                             </tableViewSection>
                         </sections>
                         <connections>
-                            <outlet property="dataSource" destination="9rf-V6-4rd" id="2xL-fs-X3k"/>
-                            <outlet property="delegate" destination="9rf-V6-4rd" id="sXZ-vj-aHA"/>
+                            <outlet property="dataSource" destination="JzE-g4-uX0" id="FMe-x7-7xo"/>
+                            <outlet property="delegate" destination="JzE-g4-uX0" id="I6I-Of-LjI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Professor" id="jZT-Ze-TRj">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="tDm-7s-LdG"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="JeV-XL-RwK"/>
+                    <navigationItem key="navigationItem" title="Add Professor" id="k3f-P1-a01">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="u1a-20-4f3"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="courseText" destination="v8h-Zd-WJj" id="wgd-cS-Xrv"/>
-                        <outlet property="emailText" destination="yCo-ib-frr" id="57W-jm-iRj"/>
-                        <outlet property="nameText" destination="HRa-NV-2YP" id="AMk-H1-LvT"/>
-                        <outlet property="officeHoursText" destination="Jpm-gm-AZN" id="SLK-3x-N7x"/>
-                        <outlet property="officeLocationText" destination="AUY-jm-meI" id="Jko-ye-lOr"/>
-                        <outlet property="phoneNumText" destination="yCo-ib-frr" id="mkT-EA-aUw"/>
-                        <outlet property="websiteText" destination="yCo-ib-frr" id="bio-aY-Do7"/>
+                        <outlet property="courseText" destination="cb9-e8-zbg" id="qVC-ft-Tn9"/>
+                        <outlet property="emailText" destination="Ogh-9g-KyS" id="xzf-JG-1hd"/>
+                        <outlet property="nameText" destination="H1l-dh-9Wv" id="mud-HU-bde"/>
+                        <outlet property="officeHoursText" destination="uuW-zz-EMx" id="T0k-Jz-egM"/>
+                        <outlet property="officeLocationText" destination="9Ee-ic-iRN" id="a8d-49-9gM"/>
+                        <outlet property="phoneNumText" destination="Ogh-9g-KyS" id="Uh4-Kp-Id2"/>
+                        <outlet property="websiteText" destination="Ogh-9g-KyS" id="uEA-Mb-Msb"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TS9-a8-j9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xz-Sp-gLR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2421.739130434783" y="-310.04464285714283"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="d0C-Qm-SPL">
+        <scene sceneID="IYs-oA-jXc">
             <objects>
-                <navigationController id="BkW-74-5ap" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cHK-il-Rl4">
+                <navigationController id="48r-Me-lCB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9kI-1J-po6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="9rf-V6-4rd" kind="relationship" relationship="rootViewController" id="xxo-ZW-0XS"/>
+                        <segue destination="JzE-g4-uX0" kind="relationship" relationship="rootViewController" id="etQ-QE-PIq"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e4g-Ka-peO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSO-7O-UMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1532" y="-310"/>
         </scene>
         <!--Professors-->
-        <scene sceneID="zDh-j5-g1N">
+        <scene sceneID="MUu-Pe-azA">
             <objects>
-                <navigationController storyboardIdentifier="ProfessorVC" id="8wB-IL-apm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Professors" image="person.fill" catalog="system" id="uJg-O0-vI1"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="yTt-7I-2vo">
+                <navigationController storyboardIdentifier="ProfessorVC" id="61t-jn-oJo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Professors" image="person.fill" catalog="system" id="Lar-so-ARs"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="BmK-FU-deL">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -290,10 +289,10 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="HuS-jv-Z3H" kind="relationship" relationship="rootViewController" id="v1f-8D-nrS"/>
+                        <segue destination="pbi-dA-Nc8" kind="relationship" relationship="rootViewController" id="qwK-4K-0GK"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="seo-Mo-B3M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUr-Be-DVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-139" y="-310"/>
         </scene>

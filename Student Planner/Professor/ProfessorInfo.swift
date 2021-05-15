@@ -41,6 +41,7 @@ struct ProfessorList {
         
         return profNameList
     }
+    
     static let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     static let archiveURL = documentsDirectory.appendingPathComponent("Professors").appendingPathExtension("plist")
 
@@ -59,3 +60,6 @@ struct ProfessorList {
         try? encodedProfessor?.write(to: archiveURL, options: .noFileProtection)
     }
 }
+
+//prof object
+var ProfArray: [Professor] = []
