@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37014B71264FA12900A3900F /* ProfessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37014B70264FA12900A3900F /* ProfessorTests.swift */; };
+		37ECBF07264D2B23001AA4DD /* ProfessorAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECBF06264D2B23001AA4DD /* ProfessorAddTableViewController.swift */; };
+		37ECBF0C264D2B27001AA4DD /* ProfessorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECBF0B264D2B27001AA4DD /* ProfessorInfo.swift */; };
+		37ECBF11264D2B2B001AA4DD /* ProfessorListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECBF10264D2B2B001AA4DD /* ProfessorListTableViewController.swift */; };
+		7A2F137C25F9D88A00629063 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F137B25F9D88A00629063 /* Assignments.swift */; };
+		7A65DAE0264375E900FACC25 /* AssignmentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A65DADF264375E900FACC25 /* AssignmentsTest.swift */; };
+		A704336C264CE79400A6A4B7 /* Assignments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A704336B264CE79400A6A4B7 /* Assignments.storyboard */; };
+		A769BCCB25F9C74500EDD2D3 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769BCCA25F9C74500EDD2D3 /* Courses.swift */; };
+		A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */ = {isa = PBXBuildFile; fileRef = A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */; };
+		A769BCDB25F9D63F00EDD2D3 /* CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */; };
+		A7A44F7525ED70F400FB1989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F7425ED70F400FB1989 /* AppDelegate.swift */; };
+		A7A44F7725ED70F400FB1989 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */; };
+		A7A44F7925ED70F400FB1989 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F7825ED70F400FB1989 /* ViewController.swift */; };
+		A7A44F7C25ED70F400FB1989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A44F7A25ED70F400FB1989 /* Main.storyboard */; };
+		A7A44F7E25ED70F500FB1989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A44F7D25ED70F500FB1989 /* Assets.xcassets */; };
+		A7A44F8125ED70F500FB1989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A44F7F25ED70F500FB1989 /* LaunchScreen.storyboard */; };
+		A7A44F8C25ED70F600FB1989 /* Student_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F8B25ED70F600FB1989 /* Student_PlannerTests.swift */; };
+		A7A44F9725ED70F600FB1989 /* Student_PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A44F9625ED70F600FB1989 /* Student_PlannerUITests.swift */; };
+		A7F5D39D2649D83F0097A653 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5D39C2649D83F0097A653 /* CoursesTableViewController.swift */; };
+		A7F5D3AD264A2D4C0097A653 /* CourseDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5D3AC264A2D4C0097A653 /* CourseDetailTableViewController.swift */; };
+		A7FBB31D264D0469007F74CE /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FBB31C264D0469007F74CE /* HomePage.storyboard */; };
+		A7FBB322264D0472007F74CE /* Courses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FBB321264D0472007F74CE /* Courses.storyboard */; };
+		FE7BEF9E264D11A700B7E039 /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BEF9B264D11A700B7E039 /* GradeViewController.swift */; };
+		FE7BEF9F264D11A700B7E039 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BEF9C264D11A700B7E039 /* Grade.swift */; };
+		FE7BEFA0264D11A700B7E039 /* Grade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7BEF9D264D11A700B7E039 /* Grade.storyboard */; };
+		FEE4485D264D26D1000F5B92 /* GradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4485C264D26D1000F5B92 /* GradeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7A44F8825ED70F600FB1989 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A44F6925ED70F400FB1989 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A44F7025ED70F400FB1989;
+			remoteInfo = "Student Planner";
+		};
+		A7A44F9325ED70F600FB1989 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A44F6925ED70F400FB1989 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A44F7025ED70F400FB1989;
+			remoteInfo = "Student Planner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37014B70264FA12900A3900F /* ProfessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorTests.swift; sourceTree = "<group>"; };
+		37ECBF05264D2B20001AA4DD /* Professor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Professor.storyboard; sourceTree = "<group>"; };
+		37ECBF06264D2B23001AA4DD /* ProfessorAddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorAddTableViewController.swift; sourceTree = "<group>"; };
+		37ECBF0B264D2B27001AA4DD /* ProfessorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorInfo.swift; sourceTree = "<group>"; };
+		37ECBF10264D2B2B001AA4DD /* ProfessorListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorListTableViewController.swift; sourceTree = "<group>"; };
+		7A2F137B25F9D88A00629063 /* Assignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignments.swift; sourceTree = "<group>"; };
+		7A65DADF264375E900FACC25 /* AssignmentsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsTest.swift; sourceTree = "<group>"; };
+		A704336B264CE79400A6A4B7 /* Assignments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assignments.storyboard; sourceTree = "<group>"; };
+		A769BCCA25F9C74500EDD2D3 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
+		A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = gitignoreFile; sourceTree = "<group>"; };
+		A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTests.swift; sourceTree = "<group>"; };
+		A7A44F7125ED70F400FB1989 /* Student Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A44F7425ED70F400FB1989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7A44F7825ED70F400FB1989 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7A44F7B25ED70F400FB1989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7A44F7D25ED70F500FB1989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7A44F8025ED70F500FB1989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7A44F8225ED70F500FB1989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A44F8725ED70F600FB1989 /* Student PlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student PlannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A44F8B25ED70F600FB1989 /* Student_PlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_PlannerTests.swift; sourceTree = "<group>"; };
+		A7A44F8D25ED70F600FB1989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A44F9225ED70F600FB1989 /* Student PlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student PlannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A44F9625ED70F600FB1989 /* Student_PlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_PlannerUITests.swift; sourceTree = "<group>"; };
+		A7A44F9825ED70F600FB1989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F5D39C2649D83F0097A653 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		A7F5D3AC264A2D4C0097A653 /* CourseDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailTableViewController.swift; sourceTree = "<group>"; };
+		A7FBB31C264D0469007F74CE /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		A7FBB321264D0472007F74CE /* Courses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Courses.storyboard; sourceTree = "<group>"; };
+		FE7BEF9B264D11A700B7E039 /* GradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
+		FE7BEF9C264D11A700B7E039 /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		FE7BEF9D264D11A700B7E039 /* Grade.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Grade.storyboard; sourceTree = "<group>"; };
+		FEE4485C264D26D1000F5B92 /* GradeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7A44F6E25ED70F400FB1989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A44F8425ED70F600FB1989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A44F8F25ED70F600FB1989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37ECBF18264D2B4A001AA4DD /* Professor */ = {
+			isa = PBXGroup;
+			children = (
+				37ECBF05264D2B20001AA4DD /* Professor.storyboard */,
+				37ECBF06264D2B23001AA4DD /* ProfessorAddTableViewController.swift */,
+				37ECBF0B264D2B27001AA4DD /* ProfessorInfo.swift */,
+				37ECBF10264D2B2B001AA4DD /* ProfessorListTableViewController.swift */,
+			);
+			path = Professor;
+			sourceTree = "<group>";
+		};
+		A7043363264CE68700A6A4B7 /* Tab Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BEF9D264D11A700B7E039 /* Grade.storyboard */,
+				A704336B264CE79400A6A4B7 /* Assignments.storyboard */,
+				A7FBB31C264D0469007F74CE /* HomePage.storyboard */,
+				A7FBB321264D0472007F74CE /* Courses.storyboard */,
+			);
+			path = "Tab Storyboards";
+			sourceTree = "<group>";
+		};
+		A7043370264CE9A000A6A4B7 /* Swift Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BEF9C264D11A700B7E039 /* Grade.swift */,
+				A769BCCA25F9C74500EDD2D3 /* Courses.swift */,
+				7A2F137B25F9D88A00629063 /* Assignments.swift */,
+			);
+			path = "Swift Files";
+			sourceTree = "<group>";
+		};
+		A7043377264CE9E300A6A4B7 /* Tab ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BEF9B264D11A700B7E039 /* GradeViewController.swift */,
+				A7F5D39C2649D83F0097A653 /* CoursesTableViewController.swift */,
+				A7F5D3AC264A2D4C0097A653 /* CourseDetailTableViewController.swift */,
+			);
+			path = "Tab ViewControllers";
+			sourceTree = "<group>";
+		};
+		A7A44F6825ED70F400FB1989 = {
+			isa = PBXGroup;
+			children = (
+				A769BCD225F9D2CA00EDD2D3 /* gitignoreFile */,
+				A7A44F7325ED70F400FB1989 /* Student Planner */,
+				A7A44F8A25ED70F600FB1989 /* Student PlannerTests */,
+				A7A44F9525ED70F600FB1989 /* Student PlannerUITests */,
+				A7A44F7225ED70F400FB1989 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7A44F7225ED70F400FB1989 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7A44F7125ED70F400FB1989 /* Student Planner.app */,
+				A7A44F8725ED70F600FB1989 /* Student PlannerTests.xctest */,
+				A7A44F9225ED70F600FB1989 /* Student PlannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7A44F7325ED70F400FB1989 /* Student Planner */ = {
+			isa = PBXGroup;
+			children = (
+				37ECBF18264D2B4A001AA4DD /* Professor */,
+				A7A44F7D25ED70F500FB1989 /* Assets.xcassets */,
+				A7A44F7425ED70F400FB1989 /* AppDelegate.swift */,
+				A7A44F7625ED70F400FB1989 /* SceneDelegate.swift */,
+				A7A44F7825ED70F400FB1989 /* ViewController.swift */,
+				A7A44F7F25ED70F500FB1989 /* LaunchScreen.storyboard */,
+				A7A44F7A25ED70F400FB1989 /* Main.storyboard */,
+				A7043363264CE68700A6A4B7 /* Tab Storyboards */,
+				A7043370264CE9A000A6A4B7 /* Swift Files */,
+				A7043377264CE9E300A6A4B7 /* Tab ViewControllers */,
+				A7A44F8225ED70F500FB1989 /* Info.plist */,
+			);
+			path = "Student Planner";
+			sourceTree = "<group>";
+		};
+		A7A44F8A25ED70F600FB1989 /* Student PlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7A44F8B25ED70F600FB1989 /* Student_PlannerTests.swift */,
+				FEE4485C264D26D1000F5B92 /* GradeTests.swift */,
+				7A65DADF264375E900FACC25 /* AssignmentsTest.swift */,
+				A7A44F8D25ED70F600FB1989 /* Info.plist */,
+				A769BCDA25F9D63F00EDD2D3 /* CoursesTests.swift */,
+				37014B70264FA12900A3900F /* ProfessorTests.swift */,
+			);
+			path = "Student PlannerTests";
+			sourceTree = "<group>";
+		};
+		A7A44F9525ED70F600FB1989 /* Student PlannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7A44F9625ED70F600FB1989 /* Student_PlannerUITests.swift */,
+				A7A44F9825ED70F600FB1989 /* Info.plist */,
+			);
+			path = "Student PlannerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7A44F7025ED70F400FB1989 /* Student Planner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A44F9B25ED70F600FB1989 /* Build configuration list for PBXNativeTarget "Student Planner" */;
+			buildPhases = (
+				A7A44F6D25ED70F400FB1989 /* Sources */,
+				A7A44F6E25ED70F400FB1989 /* Frameworks */,
+				A7A44F6F25ED70F400FB1989 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Student Planner";
+			productName = "Student Planner";
+			productReference = A7A44F7125ED70F400FB1989 /* Student Planner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7A44F8625ED70F600FB1989 /* Student PlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A44F9E25ED70F600FB1989 /* Build configuration list for PBXNativeTarget "Student PlannerTests" */;
+			buildPhases = (
+				A7A44F8325ED70F600FB1989 /* Sources */,
+				A7A44F8425ED70F600FB1989 /* Frameworks */,
+				A7A44F8525ED70F600FB1989 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7A44F8925ED70F600FB1989 /* PBXTargetDependency */,
+			);
+			name = "Student PlannerTests";
+			productName = "Student PlannerTests";
+			productReference = A7A44F8725ED70F600FB1989 /* Student PlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7A44F9125ED70F600FB1989 /* Student PlannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A44FA125ED70F600FB1989 /* Build configuration list for PBXNativeTarget "Student PlannerUITests" */;
+			buildPhases = (
+				A7A44F8E25ED70F600FB1989 /* Sources */,
+				A7A44F8F25ED70F600FB1989 /* Frameworks */,
+				A7A44F9025ED70F600FB1989 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7A44F9425ED70F600FB1989 /* PBXTargetDependency */,
+			);
+			name = "Student PlannerUITests";
+			productName = "Student PlannerUITests";
+			productReference = A7A44F9225ED70F600FB1989 /* Student PlannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7A44F6925ED70F400FB1989 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A7A44F7025ED70F400FB1989 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A7A44F8625ED70F600FB1989 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A7A44F7025ED70F400FB1989;
+					};
+					A7A44F9125ED70F600FB1989 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A7A44F7025ED70F400FB1989;
+					};
+				};
+			};
+			buildConfigurationList = A7A44F6C25ED70F400FB1989 /* Build configuration list for PBXProject "Student Planner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7A44F6825ED70F400FB1989;
+			productRefGroup = A7A44F7225ED70F400FB1989 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7A44F7025ED70F400FB1989 /* Student Planner */,
+				A7A44F8625ED70F600FB1989 /* Student PlannerTests */,
+				A7A44F9125ED70F600FB1989 /* Student PlannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7A44F6F25ED70F400FB1989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A44F8125ED70F500FB1989 /* LaunchScreen.storyboard in Resources */,
+				A7FBB322264D0472007F74CE /* Courses.storyboard in Resources */,
+				FE7BEFA0264D11A700B7E039 /* Grade.storyboard in Resources */,
+				A769BCD325F9D2CA00EDD2D3 /* gitignoreFile in Resources */,
+				A7FBB31D264D0469007F74CE /* HomePage.storyboard in Resources */,
+				A7A44F7E25ED70F500FB1989 /* Assets.xcassets in Resources */,
+				A7A44F7C25ED70F400FB1989 /* Main.storyboard in Resources */,
+				A704336C264CE79400A6A4B7 /* Assignments.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A44F8525ED70F600FB1989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A44F9025ED70F600FB1989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7A44F6D25ED70F400FB1989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A769BCCB25F9C74500EDD2D3 /* Courses.swift in Sources */,
+				FE7BEF9E264D11A700B7E039 /* GradeViewController.swift in Sources */,
+				A7A44F7925ED70F400FB1989 /* ViewController.swift in Sources */,
+				37ECBF0C264D2B27001AA4DD /* ProfessorInfo.swift in Sources */,
+				37ECBF07264D2B23001AA4DD /* ProfessorAddTableViewController.swift in Sources */,
+				FE7BEF9F264D11A700B7E039 /* Grade.swift in Sources */,
+				A7A44F7525ED70F400FB1989 /* AppDelegate.swift in Sources */,
+				37ECBF11264D2B2B001AA4DD /* ProfessorListTableViewController.swift in Sources */,
+				A7F5D3AD264A2D4C0097A653 /* CourseDetailTableViewController.swift in Sources */,
+				A7A44F7725ED70F400FB1989 /* SceneDelegate.swift in Sources */,
+				A7F5D39D2649D83F0097A653 /* CoursesTableViewController.swift in Sources */,
+				7A2F137C25F9D88A00629063 /* Assignments.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A44F8325ED70F600FB1989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37014B71264FA12900A3900F /* ProfessorTests.swift in Sources */,
+				7A65DAE0264375E900FACC25 /* AssignmentsTest.swift in Sources */,
+				FEE4485D264D26D1000F5B92 /* GradeTests.swift in Sources */,
+				A769BCDB25F9D63F00EDD2D3 /* CoursesTests.swift in Sources */,
+				A7A44F8C25ED70F600FB1989 /* Student_PlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A44F8E25ED70F600FB1989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A44F9725ED70F600FB1989 /* Student_PlannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7A44F8925ED70F600FB1989 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7A44F7025ED70F400FB1989 /* Student Planner */;
+			targetProxy = A7A44F8825ED70F600FB1989 /* PBXContainerItemProxy */;
+		};
+		A7A44F9425ED70F600FB1989 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7A44F7025ED70F400FB1989 /* Student Planner */;
+			targetProxy = A7A44F9325ED70F600FB1989 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7A44F7A25ED70F400FB1989 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7A44F7B25ED70F400FB1989 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7A44F7F25ED70F500FB1989 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7A44F8025ED70F500FB1989 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7A44F9925ED70F600FB1989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7A44F9A25ED70F600FB1989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7A44F9C25ED70F600FB1989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Student Planner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fullerton.edu.Student-Planner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7A44F9D25ED70F600FB1989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Student Planner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fullerton.edu.Student-Planner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7A44F9F25ED70F600FB1989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Student PlannerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fullerton.edu.Student-PlannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Student Planner.app/Student Planner";
+			};
+			name = Debug;
+		};
+		A7A44FA025ED70F600FB1989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Student PlannerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fullerton.edu.Student-PlannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Student Planner.app/Student Planner";
+			};
+			name = Release;
+		};
+		A7A44FA225ED70F600FB1989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Student PlannerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fullerton.edu.Student-PlannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Student Planner";
+			};
+			name = Debug;
+		};
+		A7A44FA325ED70F600FB1989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Student PlannerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fullerton.edu.Student-PlannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Student Planner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7A44F6C25ED70F400FB1989 /* Build configuration list for PBXProject "Student Planner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A44F9925ED70F600FB1989 /* Debug */,
+				A7A44F9A25ED70F600FB1989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A44F9B25ED70F600FB1989 /* Build configuration list for PBXNativeTarget "Student Planner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A44F9C25ED70F600FB1989 /* Debug */,
+				A7A44F9D25ED70F600FB1989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A44F9E25ED70F600FB1989 /* Build configuration list for PBXNativeTarget "Student PlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A44F9F25ED70F600FB1989 /* Debug */,
+				A7A44FA025ED70F600FB1989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A44FA125ED70F600FB1989 /* Build configuration list for PBXNativeTarget "Student PlannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A44FA225ED70F600FB1989 /* Debug */,
+				A7A44FA325ED70F600FB1989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7A44F6925ED70F400FB1989 /* Project object */;
+}
